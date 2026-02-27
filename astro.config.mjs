@@ -2,8 +2,12 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import { buildSidebar } from './s/starlight-sidebar.mjs';
 
+const site = process.env.SITE ?? 'http://localhost:4321';
+const base = process.env.BASE;
+
 export default defineConfig({
-  site: 'http://localhost:4321',
+  site,
+  base,
   integrations: [
     starlight({
       title: 'CUI UIG Documentation',
