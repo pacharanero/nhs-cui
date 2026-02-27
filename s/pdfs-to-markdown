@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+"""Convert PDFs under pdfs/ into markdown/ with mirrored structure.
+
+Uses PyMuPDF4LLM to extract text into Markdown and emit PDF images referenced
+from the Markdown files.
+"""
+
+from __future__ import annotations
+
+import argparse
+import os
+from pathlib import Path
+
+try:
+    import pymupdf4llm
+except ModuleNotFoundError as exc:
+    raise SystemExit(
+        "Missing dependency 'pymupdf4llm'. Run: .venv/bin/pip install pymupdf pymupdf4llm"
+    ) from exc
+
+
+def convert_pdf(pdf_path: Path, in_root: Path, out_root: Path, dpi: int) -> Path:
+    rel_pdf = pdf_path.relative_to(in_root)
+    rel_dir = rel_pdf.parent
+    stem = rel_pdf.stem
+
+    md_dir = out_root / rel_dir
+    md_dir.mkdir(parents=True, exist_ok=True)
+
+    assets_rel = f"{stem}_assets"
+    assets_dir = md_dir / assets_rel
+    assets_dir.mkdir(parents=True, exist_ok=True)
+
+    abs_pdf = pdf_path.resolve()
+    cwd = Path.cwd()
+    try:
+        # Write links relative to each markdown file directory.
+        os.chdir(md_dir)
+        md_text = pymupdf4llm.to_markdown(
+            str(abs_pdf),
+            write_images=True,
+            image_path=assets_rel,
+            image_format="png",
+            force_text=True,
+            dpi=dpi,
+        )
+    finally:
+        os.chdir(cwd)
+
+    md_path = md_dir / f"{stem}.md"
+    md_path.write_text(md_text, encoding="utf-8")
+    return md_path
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--input", default="pdfs", help="Input PDF root directory")
+    parser.add_argument("--output", default="markdown", help="Output markdown root directory")
+    parser.add_argument("--dpi", type=int, default=150, help="Image export DPI")
+    args = parser.parse_args()
+
+    in_root = Path(args.input)
+    out_root = Path(args.output)
+
+    if not in_root.exists():
+        raise SystemExit(f"Input directory does not exist: {in_root}")
+
+    pdfs = sorted(in_root.rglob("*.pdf"))
+    if not pdfs:
+        raise SystemExit(f"No PDFs found in: {in_root}")
+
+    converted = 0
+    for pdf in pdfs:
+        md = convert_pdf(pdf, in_root, out_root, args.dpi)
+        converted += 1
+        print(f"Converted {pdf} -> {md}")
+
+    print(f"Converted {converted} PDFs")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,0 +1,185 @@
+#!/usr/bin/env python3
+"""Download CUI PDFs from the UK Web Archive page grouped by preceding H2 section."""
+
+from __future__ import annotations
+
+import argparse
+import os
+import re
+import sys
+from dataclasses import dataclass
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import urljoin, urlparse
+from urllib.request import Request, urlopen
+
+ARCHIVE_URL = "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545/http://systems.digital.nhs.uk/data/cui/uig"
+USER_AGENT = (
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+)
+
+
+@dataclass
+class PdfLink:
+    section: str
+    href: str
+    text: str
+
+
+class CUIPageParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.in_h2 = False
+        self.in_a = False
+        self.current_h2 = "Uncategorized"
+        self._h2_buf: list[str] = []
+        self._a_buf: list[str] = []
+        self._a_href: str | None = None
+        self.pdf_links: list[PdfLink] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attrs_dict = dict(attrs)
+        if tag.lower() == "h2":
+            self.in_h2 = True
+            self._h2_buf = []
+        elif tag.lower() == "a":
+            self.in_a = True
+            self._a_buf = []
+            self._a_href = attrs_dict.get("href")
+
+    def handle_endtag(self, tag: str) -> None:
+        tl = tag.lower()
+        if tl == "h2" and self.in_h2:
+            text = " ".join("".join(self._h2_buf).split()).strip()
+            if text:
+                self.current_h2 = text
+            self.in_h2 = False
+            self._h2_buf = []
+        elif tl == "a" and self.in_a:
+            href = (self._a_href or "").strip()
+            label = " ".join("".join(self._a_buf).split()).strip()
+            if href and ".pdf" in href.lower():
+                self.pdf_links.append(PdfLink(self.current_h2, href, label))
+            self.in_a = False
+            self._a_buf = []
+            self._a_href = None
+
+    def handle_data(self, data: str) -> None:
+        if self.in_h2:
+            self._h2_buf.append(data)
+        if self.in_a:
+            self._a_buf.append(data)
+
+
+def slugify(name: str) -> str:
+    name = name.strip().lower()
+    name = re.sub(r"[\\/:*?\"<>|]", " ", name)
+    name = re.sub(r"\s+", "-", name)
+    name = re.sub(r"[^a-z0-9._-]", "", name)
+    return name.strip("-._") or "uncategorized"
+
+
+def fetch(url: str, timeout: int) -> bytes:
+    req = Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Upgrade-Insecure-Requests": "1",
+        },
+    )
+    with urlopen(req, timeout=timeout) as resp:
+        return resp.read()
+
+
+def pick_filename(url: str, fallback_label: str) -> str:
+    path = urlparse(url).path
+    filename = os.path.basename(path)
+    if not filename.lower().endswith(".pdf"):
+        guessed = slugify(fallback_label) or "document"
+        filename = f"{guessed}.pdf"
+    return filename
+
+
+def unique_path(path: Path) -> Path:
+    if not path.exists():
+        return path
+    stem = path.stem
+    suffix = path.suffix
+    i = 2
+    while True:
+        candidate = path.with_name(f"{stem}-{i}{suffix}")
+        if not candidate.exists():
+            return candidate
+        i += 1
+
+
+def parse_links(html: str) -> list[PdfLink]:
+    parser = CUIPageParser()
+    parser.feed(html)
+    return parser.pdf_links
+
+
+def find_replay_iframe_url(html: str, base_url: str) -> str | None:
+    # The archive page is a wrapper with an iframe containing real content.
+    m = re.search(r'<iframe[^>]+id="replay_iframe"[^>]+src="([^"]+)"', html, re.I)
+    if not m:
+        return None
+    return urljoin(base_url, m.group(1))
+
+
+def download_pdfs(base_url: str, out_dir: Path, timeout: int, dry_run: bool) -> int:
+    html = fetch(base_url, timeout).decode("utf-8", errors="replace")
+    replay_url = find_replay_iframe_url(html, base_url)
+    if replay_url:
+        html = fetch(replay_url, timeout).decode("utf-8", errors="replace")
+        base_url = replay_url
+    links = parse_links(html)
+
+    if not links:
+        print("No PDF links found.")
+        return 1
+
+    print(f"Found {len(links)} PDF links")
+    count = 0
+    for link in links:
+        section_dir = out_dir / slugify(link.section)
+        section_dir.mkdir(parents=True, exist_ok=True)
+
+        url = urljoin(base_url, link.href)
+        fname = pick_filename(url, link.text)
+        target = unique_path(section_dir / fname)
+
+        print(f"[{link.section}] -> {target}")
+        if dry_run:
+            continue
+
+        try:
+            data = fetch(url, timeout)
+            with open(target, "wb") as f:
+                f.write(data)
+            count += 1
+        except Exception as exc:  # noqa: BLE001
+            print(f"Failed to download {url}: {exc}", file=sys.stderr)
+
+    print(f"Downloaded {count} files into {out_dir}")
+    return 0
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--url", default=ARCHIVE_URL, help="Archive page URL to scrape")
+    parser.add_argument("--out", default="pdfs", help="Output directory")
+    parser.add_argument("--timeout", type=int, default=30, help="HTTP timeout in seconds")
+    parser.add_argument("--dry-run", action="store_true", help="List PDFs without downloading")
+    args = parser.parse_args()
+
+    out_dir = Path(args.out)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    return download_pdfs(args.url, out_dir, args.timeout, args.dry_run)
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
