@@ -7,7 +7,13 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'CUI UIG Documentation',
-      sidebar: buildSidebar('markdown')
+      sidebar: buildSidebar('markdown'),
+      customCss: [
+        '@fontsource/source-sans-3/400.css',
+        '@fontsource/source-sans-3/600.css',
+        '@fontsource/source-sans-3/700.css',
+        '/src/styles/nhs-theme.css'
+      ]
     })
   ]
 });

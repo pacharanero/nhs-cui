@@ -1,0 +1,45 @@
+:root {
+  --sl-font: "Frutiger W01", "Helvetica Neue", Arial, sans-serif;
+
+  /* Dark mode defaults */
+  --sl-color-accent-low: hsl(209, 50%, 21%);
+  --sl-color-accent: hsl(206, 100%, 64%);
+  --sl-color-accent-high: hsl(204, 100%, 88%);
+
+  --sl-color-bg: hsl(208, 43%, 11%);
+  --sl-color-bg-nav: hsl(208, 40%, 14%);
+  --sl-color-bg-sidebar: hsl(208, 38%, 15%);
+  --sl-color-bg-inline-code: hsl(208, 28%, 22%);
+
+  --sl-color-text: hsl(210, 28%, 88%);
+  --sl-color-text-accent: var(--sl-color-accent-high);
+
+  --sl-color-hairline: hsl(208, 27%, 24%);
+  --sl-color-hairline-light: hsl(208, 24%, 29%);
+}
+
+:root[data-theme='light'],
+[data-theme='light'] ::backdrop {
+  --sl-font: "Frutiger W01", "Helvetica Neue", Arial, sans-serif;
+
+  --sl-color-accent-low: hsl(206, 83%, 91%);
+  --sl-color-accent: hsl(209, 100%, 36%); /* NHS blue #005eb8 */
+  --sl-color-accent-high: hsl(209, 100%, 24%);
+
+  --sl-color-bg: hsl(0, 0%, 100%);
+  --sl-color-bg-nav: hsl(204, 25%, 96%);
+  --sl-color-bg-sidebar: hsl(204, 30%, 97%);
+  --sl-color-bg-inline-code: hsl(206, 28%, 93%);
+
+  --sl-color-text: hsl(210, 24%, 17%);
+  --sl-color-text-accent: hsl(209, 100%, 32%);
+
+  --sl-color-hairline: hsl(205, 18%, 82%);
+  --sl-color-hairline-light: hsl(205, 24%, 89%);
+}
+
+/* Keep typography close to current scale while sharpening hierarchy. */
+:root {
+  --sl-text-body: 0.98rem;
+  --sl-line-height: 1.68;
+}
