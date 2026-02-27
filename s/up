@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Start the dockerized Astro development environment.
+docker compose up --build

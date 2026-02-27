@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import re
 import sys
@@ -130,7 +131,13 @@ def find_replay_iframe_url(html: str, base_url: str) -> str | None:
     return urljoin(base_url, m.group(1))
 
 
-def download_pdfs(base_url: str, out_dir: Path, timeout: int, dry_run: bool) -> int:
+def download_pdfs(
+    base_url: str,
+    out_dir: Path,
+    timeout: int,
+    dry_run: bool,
+    manifest_path: Path | None,
+) -> int:
     html = fetch(base_url, timeout).decode("utf-8", errors="replace")
     replay_url = find_replay_iframe_url(html, base_url)
     if replay_url:
@@ -144,15 +151,29 @@ def download_pdfs(base_url: str, out_dir: Path, timeout: int, dry_run: bool) -> 
 
     print(f"Found {len(links)} PDF links")
     count = 0
+    manifest_entries: list[dict[str, str]] = []
+
     for link in links:
         section_dir = out_dir / slugify(link.section)
         section_dir.mkdir(parents=True, exist_ok=True)
 
         url = urljoin(base_url, link.href)
         fname = pick_filename(url, link.text)
-        target = unique_path(section_dir / fname)
+        canonical_target = section_dir / fname
+        target = unique_path(canonical_target)
 
         print(f"[{link.section}] -> {target}")
+        manifest_entries.append(
+            {
+                "section": link.section,
+                "section_slug": slugify(link.section),
+                "filename": fname,
+                "relative_path": f"{slugify(link.section)}/{fname}",
+                "resolved_filename": target.name,
+                "title": link.text,
+                "source_url": url,
+            }
+        )
         if dry_run:
             continue
 
@@ -165,6 +186,12 @@ def download_pdfs(base_url: str, out_dir: Path, timeout: int, dry_run: bool) -> 
             print(f"Failed to download {url}: {exc}", file=sys.stderr)
 
     print(f"Downloaded {count} files into {out_dir}")
+    if manifest_path is not None:
+        manifest_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(manifest_path, "w", encoding="utf-8") as f:
+            json.dump(manifest_entries, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+        print(f"Wrote link manifest: {manifest_path}")
     return 0
 
 
@@ -174,11 +201,17 @@ def main() -> int:
     parser.add_argument("--out", default="pdfs", help="Output directory")
     parser.add_argument("--timeout", type=int, default=30, help="HTTP timeout in seconds")
     parser.add_argument("--dry-run", action="store_true", help="List PDFs without downloading")
+    parser.add_argument(
+        "--manifest",
+        default="pdfs/_link-manifest.json",
+        help="Optional JSON manifest path for section/filename/title mapping (use '' to disable)",
+    )
     args = parser.parse_args()
 
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
-    return download_pdfs(args.url, out_dir, args.timeout, args.dry_run)
+    manifest_path = None if args.manifest.strip() == "" else Path(args.manifest)
+    return download_pdfs(args.url, out_dir, args.timeout, args.dry_run, manifest_path)
 
 
 if __name__ == "__main__":

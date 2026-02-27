@@ -1,0 +1,17 @@
+{
+  "name": "cui-docs-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node s/sync-site-assets.mjs",
+    "dev": "astro dev",
+    "prebuild": "node s/sync-site-assets.mjs",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.30.0",
+    "astro": "^5.14.2"
+  }
+}

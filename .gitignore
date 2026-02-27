@@ -1,0 +1,9 @@
+# Node / Astro
+node_modules/
+.astro/
+dist/
+
+# Generated static asset mirrors
+public/markdown/
+public/pdfs/
+src/content/docs/

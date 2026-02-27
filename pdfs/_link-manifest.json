@@ -1,0 +1,452 @@
+[
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "tele.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/tele.pdf",
+    "resolved_filename": "tele-2.pdf",
+    "title": "Telephone Number Input and display (PDF, 827.4kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/tele.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "inputdisplay.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/inputdisplay.pdf",
+    "resolved_filename": "inputdisplay-2.pdf",
+    "title": "NHS Number input and display (PDF, 628.1kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/inputdisplay.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "sex.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/sex.pdf",
+    "resolved_filename": "sex-2.pdf",
+    "title": "Sex and current Gender Input and Display (PDF, 1.3MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/sex.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "address.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/address.pdf",
+    "resolved_filename": "address-2.pdf",
+    "title": "Address Input and display (PDF, 1.4MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/address.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "datetime.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/datetime.pdf",
+    "resolved_filename": "datetime-2.pdf",
+    "title": "Date and Time Input (PDF, 879.3kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/datetime.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "datedisplay.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/datedisplay.pdf",
+    "resolved_filename": "datedisplay-2.pdf",
+    "title": "Date display (PDF, 639.7kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/datedisplay.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "timedisplay.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/timedisplay.pdf",
+    "resolved_filename": "timedisplay-2.pdf",
+    "title": "Time display (PDF, 698.7kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/timedisplay.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "patnamedisp.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/patnamedisp.pdf",
+    "resolved_filename": "patnamedisp-2.pdf",
+    "title": "Patient Name Input and Display (PDF, 1.3MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/patnamedisp.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "patben.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/patben.pdf",
+    "resolved_filename": "patben-3.pdf",
+    "title": "Patient Banner (PDF, 1.5MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/patben.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "teleqig.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/teleqig.pdf",
+    "resolved_filename": "teleqig-2.pdf",
+    "title": "Telephone Number Input and display - QIG (PDF, 523.6kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/teleqig.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "inputdisplayqig.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/inputdisplayqig.pdf",
+    "resolved_filename": "inputdisplayqig-2.pdf",
+    "title": "NHS Number input and display - QIG (PDF, 301.9kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/inputdisplayqig.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "sexqig.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/sexqig.pdf",
+    "resolved_filename": "sexqig-2.pdf",
+    "title": "Sex and current Gender Input and Display- QIG (PDF, 347.1kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/sexqig.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "addressqig.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/addressqig.pdf",
+    "resolved_filename": "addressqig-2.pdf",
+    "title": "Address Input and display - QIG (PDF, 418.3kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/addressqig.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "datetimeqig.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/datetimeqig.pdf",
+    "resolved_filename": "datetimeqig-2.pdf",
+    "title": "Date and Time Input - QIG (PDF, 410.0kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/datetimeqig.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "datetimedispqig.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/datetimedispqig.pdf",
+    "resolved_filename": "datetimedispqig-2.pdf",
+    "title": "Date and time display - QIG (PDF, 321.9kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/datetimedispqig.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "patnamedispqig.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/patnamedispqig.pdf",
+    "resolved_filename": "patnamedispqig-2.pdf",
+    "title": "Patient Name Input and Display - QIG (PDF, 427.9kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/patnamedispqig.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "patben.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/patben.pdf",
+    "resolved_filename": "patben-3.pdf",
+    "title": "Patient Banner - QIG (PDF, 1.5MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/patben.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "micropatban.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/micropatban.pdf",
+    "resolved_filename": "micropatban-2.pdf",
+    "title": "Micro patient banner (PDF, 1.3MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/micropatban.pdf"
+  },
+  {
+    "section": "Patient identification and information Entry and Display",
+    "section_slug": "patient-identification-and-information-entry-and-display",
+    "filename": "patlistview.pdf",
+    "relative_path": "patient-identification-and-information-entry-and-display/patlistview.pdf",
+    "resolved_filename": "patlistview-2.pdf",
+    "title": "Patient list view (PDF, 5.2MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/patlistview.pdf"
+  },
+  {
+    "section": "Medications management",
+    "section_slug": "medications-management",
+    "filename": "drugadmin.pdf",
+    "relative_path": "medications-management/drugadmin.pdf",
+    "resolved_filename": "drugadmin-2.pdf",
+    "title": "Drug administration (PDF, 5.4MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/drugadmin.pdf"
+  },
+  {
+    "section": "Medications management",
+    "section_slug": "medications-management",
+    "filename": "medlist.pdf",
+    "relative_path": "medications-management/medlist.pdf",
+    "resolved_filename": "medlist-2.pdf",
+    "title": "Medications list (PDF, 1.8MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/medlist.pdf"
+  },
+  {
+    "section": "Medications management",
+    "section_slug": "medications-management",
+    "filename": "medline.pdf",
+    "relative_path": "medications-management/medline.pdf",
+    "resolved_filename": "medline-2.pdf",
+    "title": "Medications line (PDF, 1.0MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/medline.pdf"
+  },
+  {
+    "section": "Medications management",
+    "section_slug": "medications-management",
+    "filename": "searchpres.pdf",
+    "relative_path": "medications-management/searchpres.pdf",
+    "resolved_filename": "searchpres-2.pdf",
+    "title": "Search and prescribe (PDF, 4.0MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/searchpres.pdf"
+  },
+  {
+    "section": "Medications management",
+    "section_slug": "medications-management",
+    "filename": "timelineview.pdf",
+    "relative_path": "medications-management/timelineview.pdf",
+    "resolved_filename": "timelineview-2.pdf",
+    "title": "Timeline view (PDF, 6.0MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/timelineview.pdf"
+  },
+  {
+    "section": "Medications management",
+    "section_slug": "medications-management",
+    "filename": "medlineqig.pdf",
+    "relative_path": "medications-management/medlineqig.pdf",
+    "resolved_filename": "medlineqig-2.pdf",
+    "title": "Medication line quick implementation guide (PDF, 431.3kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/medlineqig.pdf"
+  },
+  {
+    "section": "Medications management",
+    "section_slug": "medications-management",
+    "filename": "medlistqig.pdf",
+    "relative_path": "medications-management/medlistqig.pdf",
+    "resolved_filename": "medlistqig-2.pdf",
+    "title": "Medication list quick implementation guide (PDF, 702.1kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/medlistqig.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "advdrugrisks.pdf",
+    "relative_path": "clinical-noting-and-terminology/advdrugrisks.pdf",
+    "resolved_filename": "advdrugrisks-2.pdf",
+    "title": "Display of adverse drug reactions (PDF, 1.6MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/advdrugrisks.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "recdrugrisk.pdf",
+    "relative_path": "clinical-noting-and-terminology/recdrugrisk.pdf",
+    "resolved_filename": "recdrugrisk-2.pdf",
+    "title": "Recording adverse drug reaction risks (PDF, 4.2MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/recdrugrisk.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "dispgraphs.pdf",
+    "relative_path": "clinical-noting-and-terminology/dispgraphs.pdf",
+    "resolved_filename": "dispgraphs-2.pdf",
+    "title": "Displaying graphs and tables (PDF, 3.0MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/dispgraphs.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "notinggraphics.pdf",
+    "relative_path": "clinical-noting-and-terminology/notinggraphics.pdf",
+    "resolved_filename": "notinggraphics-2.pdf",
+    "title": "Noting with graphics (PDF, 1.1MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/notinggraphics.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "displaystandards.pdf",
+    "relative_path": "clinical-noting-and-terminology/displaystandards.pdf",
+    "resolved_filename": "displaystandards-2.pdf",
+    "title": "Terminology – Display standards for coded information (PDF, 1.1MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/displaystandards.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "termelab.pdf",
+    "relative_path": "clinical-noting-and-terminology/termelab.pdf",
+    "resolved_filename": "termelab-2.pdf",
+    "title": "Terminology – Elaboration (PDF, 1.2MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/termelab.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "disambig.pdf",
+    "relative_path": "clinical-noting-and-terminology/disambig.pdf",
+    "resolved_filename": "disambig-2.pdf",
+    "title": "Terminology – Disambiguation and error correction (PDF, 294.7kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/disambig.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "termmatching.pdf",
+    "relative_path": "clinical-noting-and-terminology/termmatching.pdf",
+    "resolved_filename": "termmatching-2.pdf",
+    "title": "Terminology – Matching (PDF, 2.1MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/termmatching.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "termpostcoord.pdf",
+    "relative_path": "clinical-noting-and-terminology/termpostcoord.pdf",
+    "resolved_filename": "termpostcoord-2.pdf",
+    "title": "Terminology – Post coordination (PDF, 1.4MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/termpostcoord.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "clinicalstatements.pdf",
+    "relative_path": "clinical-noting-and-terminology/clinicalstatements.pdf",
+    "resolved_filename": "clinicalstatements-2.pdf",
+    "title": "Display of clinical statements consultation document (PDF, 2.2MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/clinicalstatements.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "usingtemplates.pdf",
+    "relative_path": "clinical-noting-and-terminology/usingtemplates.pdf",
+    "resolved_filename": "usingtemplates-2.pdf",
+    "title": "Noting using templates consultation document (PDF, 4.6MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/usingtemplates.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "truncation.pdf",
+    "relative_path": "clinical-noting-and-terminology/truncation.pdf",
+    "resolved_filename": "truncation-2.pdf",
+    "title": "Truncation of clinical terms consultation document (PDF, 2.6MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/truncation.pdf"
+  },
+  {
+    "section": "Clinical Noting and Terminology",
+    "section_slug": "clinical-noting-and-terminology",
+    "filename": "clinicalnoting.pdf",
+    "relative_path": "clinical-noting-and-terminology/clinicalnoting.pdf",
+    "resolved_filename": "clinicalnoting-2.pdf",
+    "title": "Clinical noting in forms – admissions clerking (PDF, 4.5MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/clinicalnoting.pdf"
+  },
+  {
+    "section": "Handover",
+    "section_slug": "handover",
+    "filename": "cuidesignguide.pdf",
+    "relative_path": "handover/cuidesignguide.pdf",
+    "resolved_filename": "cuidesignguide-2.pdf",
+    "title": "Handover requirements spreadsheet (PDF, 607.6kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/cuidesignguide.pdf"
+  },
+  {
+    "section": "Handover",
+    "section_slug": "handover",
+    "filename": "handpresintro.pdf",
+    "relative_path": "handover/handpresintro.pdf",
+    "resolved_filename": "handpresintro-2.pdf",
+    "title": "Introduction to handover presentation (PDF, 339.9kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/handpresintro.pdf"
+  },
+  {
+    "section": "Handover",
+    "section_slug": "handover",
+    "filename": "handoverintro.pdf",
+    "relative_path": "handover/handoverintro.pdf",
+    "resolved_filename": "handoverintro-2.pdf",
+    "title": "Introduction to handover (PDF, 673.0kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/handoverintro.pdf"
+  },
+  {
+    "section": "Consistent navigation",
+    "section_slug": "consistent-navigation",
+    "filename": "filtering.pdf",
+    "relative_path": "consistent-navigation/filtering.pdf",
+    "resolved_filename": "filtering-2.pdf",
+    "title": "Filtering, sorting and grouping (PDF, 3.9MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/filtering.pdf"
+  },
+  {
+    "section": "Consistent navigation",
+    "section_slug": "consistent-navigation",
+    "filename": "iconssymb.pdf",
+    "relative_path": "consistent-navigation/iconssymb.pdf",
+    "resolved_filename": "iconssymb-2.pdf",
+    "title": "Icons and symbology (PDF, 967.0kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/iconssymb.pdf"
+  },
+  {
+    "section": "Consistent navigation",
+    "section_slug": "consistent-navigation",
+    "filename": "keyshorts.pdf",
+    "relative_path": "consistent-navigation/keyshorts.pdf",
+    "resolved_filename": "keyshorts-2.pdf",
+    "title": "Keyboard shortcuts (PDF, 1.0MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/keyshorts.pdf"
+  },
+  {
+    "section": "Consistent navigation",
+    "section_slug": "consistent-navigation",
+    "filename": "alertsymbdes.pdf",
+    "relative_path": "consistent-navigation/alertsymbdes.pdf",
+    "resolved_filename": "alertsymbdes-2.pdf",
+    "title": "Alert symbol design (PDF, 1.3MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/alertsymbdes.pdf"
+  },
+  {
+    "section": "Abbreviations and acronyms",
+    "section_slug": "abbreviations-and-acronyms",
+    "filename": "abbracsfree.pdf",
+    "relative_path": "abbreviations-and-acronyms/abbracsfree.pdf",
+    "resolved_filename": "abbracsfree-2.pdf",
+    "title": "Abbreviations and accronyms in free text (PDF, 390.8kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/abbracsfree.pdf"
+  },
+  {
+    "section": "Abbreviations and acronyms",
+    "section_slug": "abbreviations-and-acronyms",
+    "filename": "abbracs.pdf",
+    "relative_path": "abbreviations-and-acronyms/abbracs.pdf",
+    "resolved_filename": "abbracs-2.pdf",
+    "title": "Abbreviations and accronyms (PDF, 565.7kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/abbracs.pdf"
+  },
+  {
+    "section": "Decision support",
+    "section_slug": "decision-support",
+    "filename": "carepathways.pdf",
+    "relative_path": "decision-support/carepathways.pdf",
+    "resolved_filename": "carepathways-2.pdf",
+    "title": "Care pathways conceptual modelling (PDF, 873.1kB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/carepathways.pdf"
+  },
+  {
+    "section": "Decision support",
+    "section_slug": "decision-support",
+    "filename": "decsupport.pdf",
+    "relative_path": "decision-support/decsupport.pdf",
+    "resolved_filename": "decsupport-2.pdf",
+    "title": "Decision support (PDF, 1.5MB)",
+    "source_url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545mp_/http://systems.digital.nhs.uk/data/cui/uig/decsupport.pdf"
+  }
+]
