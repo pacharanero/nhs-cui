@@ -15,11 +15,11 @@ https://webarchive.nationalarchives.gov.uk/ukgwa/20160921140920/http://systems.d
 
 ### Roadmap
 
-* [ ] **Phase 1** -  Recreate the CUI content in a more modern and easily browsable format - markdown files with embedded images, and a clear directory structure. It will be published as a static, browsable website using a documentation-friendly SSG.
+- [x] **Phase 1** - Recreate the CUI content in a more modern and easily browsable format - markdown files with embedded images, and a clear directory structure. It will be published as a static, browsable website using a documentation-friendly SSG.
 
-* [ ] **Phase 2** - Review and update the content to ensure it is still relevant and accurate for current NHS digital projects. Remove outdated information and add new content as needed, while maintaining the original structure and intent of the guidelines.
+- [ ] **Phase 2** - Review and update the content to ensure it is still relevant and accurate for current NHS digital projects. Remove outdated information and add new content as needed, while maintaining the original structure and intent of the guidelines.
 
-* [ ] **Phase 3** - Use patterns from popular user interface frameworks (e.g. Bootstrap, Material Design) and the knowledge in the CUI to create a reusable, open source UI framework based on the CUI guidelines
+- [ ] **Phase 3** - Use patterns from popular user interface frameworks (e.g. Bootstrap, Material Design) and the knowledge in the CUI to create a reusable, open source UI framework based on the CUI guidelines
 
 ## Astro Site Preview
 
