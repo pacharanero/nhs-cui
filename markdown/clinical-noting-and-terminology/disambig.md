@@ -101,7 +101,17 @@ Microsoft and NHS Connecting for Health Confidential
 that text
 
    - Encoding interfaces require components to identify and manage clinical terms within the
-text, as well as components to search for, and elaborate, clinical terms
+
+|  | The user makes notes by ticking boxes and choosing options, not by entering text |
+| --- | --- |
+|  | An encoding interface is not needed – the clinical codes should be embedded within the form itself |
+| de a | nd elaborate |
+|  | The user makes notes by selecting a clinical code (such as 'asthma'), and elaborating it with other codes (such as 'severe') and unencoded text (such as 'mother anxious') |
+|  | Encoding interfaces require components to search for and elaborate clinical terms NHS CUI Design Guide Workstream, Design Guide Entry - Terminology - Disambiguation and Error Correction Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 18 August 2006 |
+|  | Microsoft and NHS Connecting for Health Confidential |
+| tex | t parser |
+|  | The user makes notes by writing text, then identifies and encodes words and phases within that text |
+|  | Encoding interfaces require components to identify and manage clinical terms within the text, as well as components to search for, and elaborate, clinical terms |
 
 Figure 1: Styles of Encoding
 
@@ -155,9 +165,11 @@ Microsoft and NHS Connecting for Health Confidential
 
 ### 1.3 References to Table of Contents Document
 
-The document Table of Contents {R1} outlines every specific area of focus to be covered by the Design Guide. Each area of focus has an accompanying Design Guide Entry document. Table 1 indicates the areas of focus covered by this Design Guide Entry.
 
-4.5 Disambiguation and Error Correction 25%
+| Table of Contents Description | Level of |
+| --- | --- |
+| Reference | Completeness |
+| 4.5                        Disambiguation and Error Correction | 25% |
 
 Table 1: References to Table of Contents Document
 
@@ -171,19 +183,22 @@ Microsoft and NHS Connecting for Health Confidential
 
 ### 2.1 Terms and Abbreviations
 
-CUI Common User Interface
 
-NHS National Health Service
-
-NHS CFH NHS Connecting for Health
+| Abbreviation | Definition |
+| --- | --- |
+| CUI | Common User Interface |
+| NHS | National Health Service |
+| NHS CFH | NHS Connecting for Health |
 
 Table 2: Terms and Abbreviations
 
 ### 2.2 Definitions
 
-NHS Entity Within this document, defined as a single NHS organisation or group that is operated within a single technical infrastructure environment by a defined group of IT administrators.
 
-The Authority The organisation implementing the NHS National Programme for IT (currently NHS Connecting for Health)
+| Term | Definition |
+| --- | --- |
+| NHS Entity | Within this document, defined as a single NHS organisation or group that is operated within a single technical infrastructure environment by a defined group of IT administrators. |
+| The Authority | The organisation implementing the NHS National Programme for IT (currently NHS Connecting for Health) |
 
 Table 3: Definitions
 
@@ -219,27 +234,27 @@ Microsoft and NHS Connecting for Health Confidential
 
 ### 2.5 Open Issues Summary
 
-None
+
+| Issue | Raised By | Action to Resolve |
+| --- | --- | --- |
+| None |  |  |
 
 Table 4: Open Issues Summary
 
 ### 2.6 References
 
-R1. NHS CUI Design Guide Workstream - DG-R2-011 Table of Contents 1.0.0.0 04-Apr-2006
 
-R2. Accessibility for Clinical Applications – QW Accessibility 1000.doc 1.0.0.0 31-May-2006
-
-R3. DG-R3-004 Design Guide Entry - Terminology - Searching 1.0.0.0 18-Aug-2006
-
-R4. DG-R3-004 Design Guide Entry - Terminology - Elaboration 1.0.0.0 18-Aug-2006
-
-R5. DG-R3-004 Design Guide Entry - Terminology - Display Standards for Coded 1.0.0.0 18-Aug-2006 Information
-
-R6. DG-R3-004 Design Guide Entry - Terminology - Post Coordination 1.0.0.0 18-Aug-2006
-
-R7. DG-R3-004 Terminology Requirements TBD TBD
-
-R8. CFH_CUI_HAZARD_LOG_TERMINOLOGY_R3 TBD TBD
+| Reference Document | Version | Date |
+| --- | --- | --- |
+| R1.              NHS CUI Design Guide Workstream - DG-R2-011 Table of Contents | 1.0.0.0 | 04-Apr-2006 |
+| R2.              Accessibility for Clinical Applications – QW Accessibility 1000.doc | 1.0.0.0 | 31-May-2006 |
+| R3.              DG-R3-004 Design Guide Entry - Terminology - Searching | 1.0.0.0 | 18-Aug-2006 |
+| R4.              DG-R3-004 Design Guide Entry - Terminology - Elaboration | 1.0.0.0 | 18-Aug-2006 |
+| R5.              DG-R3-004 Design Guide Entry - Terminology - Display Standards for Coded | 1.0.0.0 | 18-Aug-2006 |
+| Information |  |  |
+| R6.              DG-R3-004 Design Guide Entry - Terminology - Post Coordination | 1.0.0.0 | 18-Aug-2006 |
+| R7.              DG-R3-004 Terminology Requirements | TBD | TBD |
+| R8.              CFH_CUI_HAZARD_LOG_TERMINOLOGY_R3 | TBD | TBD |
 
 Table 5: References
 

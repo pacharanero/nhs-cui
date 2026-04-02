@@ -248,42 +248,109 @@ Communicating absence of risks Guidance on communicating where no risks have bee
 
                - Where information is simply not available
 
-No Decision Support Guidance on communicating where a risk will not trigger Decision Support mechanisms, including alerts, because the risk is either not encoded (that is, it is free text) or because the causative agent in the risk is not included in the Decision Support reference list.
 
-Displaying risks in narrative text Guidance on how to display risk phrases as part of narrative text, as opposed to in a list/table.
+| Guidance Area | Details |
+| --- | --- |
+| Structure of list | Guidance on how the list is structured and ordered. |
+| Content of risk phrase | Guidance on the information that needs to be included in the expression of an adverse drug reaction risk. The information is prioritised: some information must be immediately visible, whereas other information can be available upon interrogation by the user (for example, a click away). |
+| Content of supporting events, | Guidance on the supporting information that may be featured to justify the risk phrases, |
+| including previous adverse reaction | including adverse reaction events. This guidance addresses content at a high level rather |
+| events (high level) | than at a detailed level. |
+| Format of list | Guidance on how to format the words and phrases within the list, including tabular arrangement, punctuation and text formatting. |
+| Justification of risks | Guidance on how to display justification of risks. This information may be encoded or may be free text, and may include details of the reaction events that support the expression of a risk. The guidance outlines the types of information that should be available, but without specifying the precise structure or content of the information. |
+| Displaying dates and times | Guidance on which dates and times to display, where and how to display them. |
+| Displaying source of risk | Guidance on how to communicate the source of the risk, such as whether a clinician witnessed a reaction or the patient recounted a risk or event. |
+| Displaying authorship of risk | Guidance on communicating the author of a risk, including their name, role and location |
+| Display of | Adverse Drug Reaction Risks User Interface Design Guidance |
+| Prepared b | y NHS CUI Programme Team, Version 1.0.0.0 Baseline |
+| Last modif | ied on 13 January 2009 |
+|  | Microsoft and NHS Connecting for Health Confidential |
+| Communicating absence of risks | Guidance on communicating where no risks have been recorded, including:  Where a positive absence has been recorded (for example, ‘no known drug allergies’)  Where the patient has not been asked  Where information is simply not available |
+| No Decision Support | Guidance on communicating where a risk will not trigger Decision Support mechanisms, including alerts, because the risk is either not encoded (that is, it is free text) or because the causative agent in the risk is not included in the Decision Support reference list. |
+| Displaying risks in narrative text | Guidance on how to display risk phrases as part of narrative text, as opposed to in a list/table. |
 
 Table 1: In Scope
 
 ##### 1.4.2 Out of Scope
 
-Content and structure of adverse drug Guidance does not cover the content or structure of the adverse drug reaction events that reaction event details support the risk phrases. It will not specify what detailed information must be included in the description of a reaction event.
 
-However, the guidance will cover how to show reaction event summaries and will use examples of detailed reaction event descriptions to show how events may be displayed as justification for the risks that they support.
-
-System-initiated adverse drug reaction Guidance does not cover adverse drug reaction warnings and alerts. warning and alert messages
-
-Dealing with long lists of adverse drug Guidance does not cover how to deal with long lists of adverse drug reaction risks. reaction risks
-
-Displaying an abbreviated status of a Guidance does not cover how to display an abbreviated status of a patient’s ADR risks, such patient’s ADR risks as an entry on a patient’s identification banner.
+| Guidance Area | Details |
+| --- | --- |
+| Content and structure of adverse drug Guida | nce does not cover the content or structure of the adverse drug reaction events that |
+| reaction event details                suppo | rt the risk phrases. It will not specify what detailed information must be included in the |
+| descr | iption of a reaction event. However, the guidance will cover how to show reaction event summaries and will use examples of detailed reaction event descriptions to show how events may be displayed as justification for the risks that they support. |
+| System-initiated adverse drug reaction Guid | ance does not cover adverse drug reaction warnings and alerts. |
+| warning and alert messages |  |
+| Dealing with long lists of adverse drug Gui | dance does not cover how to deal with long lists of adverse drug reaction risks. |
+| reaction risks |  |
+| Displaying an abbreviated status of a | Guidance does not cover how to display an abbreviated status of a patient’s ADR risks, such |
+| patient’s ADR risks | as an entry on a patient’s identification banner. |
 
 Table 2: Out of Scope
 
 #### 1.5 Assumptions
 
-**A1** The structured terminology used as exemplars for this guidance will be SNOMED CT [®] and the Dictionary of Medicines and Devices (dm+d).
 
-**A2** Appropriate subsets within SNOMED CT and dm+d are available.
-
-**A3** The user interface design should follow the agreed NHS CFH position on the structure of ADR notes, unless there are patient safety reasons not to do so.
-
-**A4** The application will be able to recognise that the encoded terms 'allergy to penicillin' and 'intolerance to penicillin' are subtypes of 'propensity to adverse reaction to penicillin'.
+|  | Where the meaning of content is ambiguous |
+| --- | --- |
+|  | Where the content is irrelevant to the users’ decision-making needs |
+| stin | guish different types of clinical phrases, where they have radically different meanings, |
+| r ex | ample: |
+|  | Distinguish expressions of future risk from expressions of past events |
+|  | Distinguish different types of phrase by distinct styles of content, labelling and location |
+| stin | guish individual clinical phrases from one another, for example, through visual format |
+| scri | be substances in a common, unambiguous terminology (where possible) |
+| scri | be substances at an appropriate level, in order to help the user act appropriately |
+| der | lists appropriately |
+| er m | ust be able to easily access justification for expressions of future risk, where |
+| stif | ying information is available |
+| er m | ust be able to easily return to high-level information after viewing detailed |
+| form | ation |
+| earl | y communicate the provenance of clinical phrases, where appropriate Display of Adverse Drug Reaction Risks User Interface Design Guidance Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 13 January 2009 |
+|  | Microsoft and NHS Connecting for Health Confidential |
+| deli | nes |
+| truc | ture of Adverse Drug Reaction Risk List |
+| on r | elates to the structure of the list that communicates the risk of adverse drug reactions |
+| ient | is administered certain drugs, or a stated absence of known risks. The main principle |
+| ere | are multiple levels of information which are revealed sequentially, upon request by the |
+|  |  |
+| l vi | ew (‘Level 1’) contains the core information that is required by a clinician in order to |
+| he c | ausative agent (namely, what medication to avoid) and what reactions the patient has |
+| pas | t. |
+| vie | w (‘Level 2’) contains information that supports the core information, primarily |
+| the | justification and provenance of the core information. The second level view could also |
+| repo | sitory for other links to relevant entries elsewhere in the patient's record. Evidence |
+| De | scription                                                                             Conformance Rating |
+| Fe | ature multiple levels of display: an immediate view (‘Level 1’) containing the Mandatory                      High |
+| ri | sk phrase (comprising the causative agent and any past reactions) and a set of |
+| ot | her views (‘Level 2’) that are not immediately visible and contain supporting |
+| ev | ents data, if such event data and linkages exist |
+| Fe | ature a mechanism that allows the user to access relevant items within the            Mandatory               High |
+| ‘L | evel 2’ view from individual risks in the ‘Level 1’ view, if such event data and |
+| li | nkages exist |
+| Fe | ature a mechanism that allows the user to return to the ‘Level 1’ list                Mandatory               High |
+| Li | nk each risk phrase in the ‘Level 1’ view to one or more related event phrases        Mandatory               High |
+| in | the ‘Level 2’ view, if such event data and linkages exist. |
+| In | the ‘Level 1’ view, the causative agent column should be displayed at the far        Mandatory               Medium |
+| le | ft-hand side of the table |
+| In | the ‘Level 1’ view, the past reactions column should be displayed to the right       Mandatory               Medium |
+| of | the causative agent column |
+| Fe | ature a mechanism that allows the user to access further details from the             Recommended             Low |
+| ‘L | evel 2’ line items, if such event data and linkages exist |
+| Ar | range the list according to a consistent (default) order                              Mandatory               High |
+| Or | der the list alphabetically on the generic medication name (causative agent)          Recommended             Low Display of Adverse Drug Reaction Risks User Interface Design Guidance Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 13 January 2009 |
+|  | Microsoft and NHS Connecting for Health Confidential |
+| les |  |
+| sho | ws the various levels of information required to express a set of adverse drug reaction risks for a single patient. Level |
+| itia | l view, and the one that clinicians use to check if a given medication could cause an adverse drug reaction. At this point, |
+| t de | cide to view any further information. |
+| ey m | ay indeed wish to view further information that justifies the risk, possibly to find out more details about the reaction, |
+| the | form or route of the medication that caused the reaction or to identify the provenance of the risk. In which case, they |
+| t th | e risk in question and activate a control which reveals detailed information about the risk, including links to appropriate |
+| wid | er record (Level 2). |
+| en c | hoose to view further details about any of those Level 2 entries. Level 1 Level 2 Level 2: details |
 
 Table 3: Assumptions
-
-Page 4
-
-Display of Adverse Drug Reaction Risks User Interface Design Guidance Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 13 January 2009
-
 Microsoft and NHS Connecting for Health Confidential
 
 #### 1.6 Dependencies
@@ -300,7 +367,12 @@ Microsoft and NHS Connecting for Health Confidential
 
     - Design Guide Entry – Terminology – Display Standards for Coded Information
 
-**D3** Certain guidelines are dependent upon the fact that the medication terminology used contains the same length terms as the current version of the dm+d
+
+| ID | Dependency |
+| --- | --- |
+| D1 | The availability of appropriate data sets, for example, SNOMED CT subsets |
+| D2 | The following CUI guidance documents. Changes in these documents may affect the current guidance:  Design Guide Entry – Date Display  Medications Management – Medication Line – User Interface Design Guidance  Displaying Graphs and Tables – User Interface Design Guidance  Design Guide Entry – Terminology – Display Standards for Coded Information |
+| D3 | Certain guidelines are dependent upon the fact that the medication terminology used contains the same length terms as the current version of the dm+d |
 
 Table 4: Dependencies
 
@@ -314,31 +386,9 @@ Microsoft and NHS Connecting for Health Confidential
 
 #### 2.1 Visual Summary of the Guidance
 
-The following section provides a diagrammatic representation of the design guidance, emphasizing the process flow and introducing where in the flow the various guidance areas apply.
 
-Figure 2 provides an overview of the ADR display, in this case shown as a list (views are discussed later in this document):
-
-3.3.1 Structure of adverse drug reaction risk list
-
-3.3.2 Content of adverse drug reaction risk list
-
-3.3.4 Format of list
-
-3.3.8 Displaying absence of risk
-
-3.3.9 Displaying no Decision Support
-
-3.3.1 Structure of adverse drug reaction risk list
-
-3.3.2 Content of supporting events (high level guidance)
-
-3.3.5 Displaying dates/times
-
-3.3.6 Displaying source of risk
-
-3.3.7 Displaying authorship of risk
-
-3.3.1 Structure of adverse drug reaction risk list
+| Visual Summary | Areas of Guidance 3.3.1 Structure of adverse drug reaction risk list 3.3.2 Content of adverse drug reaction risk list 3.3.4 Format of list 3.3.8 Displaying absence of risk 3.3.9 Displaying no Decision Support 3.3.1 Structure of adverse drug reaction risk list 3.3.2 Content of supporting events (high level guidance) 3.3.5 Displaying dates/times 3.3.6 Displaying source of risk 3.3.7 Displaying authorship of risk 3.3.1 Structure of adverse drug reaction risk list |
+| --- | --- |
 
 Figure 2: Diagrammatic Overview of the Structure of the Adverse Drug Reaction Risk Display
 
@@ -798,35 +848,30 @@ Microsoft and NHS Connecting for Health Confidential
 
 #### 4.1 Terms and Abbreviations
 
-ADR Adverse Drug Reaction
 
-CUI Common User Interface
-
-dm+d dictionary of medicines + devices (NHS)
-
-DSS Decision Support Systems
-
-NPSA National Patient Safety Agency
-
-NHS National Health Service
-
-NHS CFH NHS Connecting for Health
-
-SNOMED CT Systematized Nomenclature of Medicine – Clinical Terms
-
-TF Trade Family
-
-VTM Virtual Therapeutic Moiety
+| Abbreviation | Definition |
+| --- | --- |
+| ADR | Adverse Drug Reaction |
+| CUI | Common User Interface |
+| dm+d | dictionary of medicines + devices (NHS) |
+| DSS | Decision Support Systems |
+| NPSA | National Patient Safety Agency |
+| NHS | National Health Service |
+| NHS CFH | NHS Connecting for Health |
+| SNOMED CT | Systematized Nomenclature of Medicine – Clinical Terms |
+| TF | Trade Family |
+| VTM | Virtual Therapeutic Moiety |
 
 Table 5: Terms and Abbreviations
 
 #### 4.2 Definitions
 
-NHS Entity Within this document, defined as a single NHS organisation or group that is operated within a single technical infrastructure environment by a defined group of IT administrators.
 
-The Authority The organisation implementing the NHS National Programme for IT (currently NHS Connecting for Health).
-
-Current best practice Current best practice is used rather than best practice, as over time best practice guidance may change or be revised due to changes to products, changes in technology, or simply the additional field deployment experience that comes over time.
+| Term | Definition |
+| --- | --- |
+| NHS Entity | Within this document, defined as a single NHS organisation or group that is operated within a single technical infrastructure environment by a defined group of IT administrators. |
+| The Authority | The organisation implementing the NHS National Programme for IT (currently NHS Connecting for Health). |
+| Current best practice | Current best practice is used rather than best practice, as over time best practice guidance may change or be revised due to changes to products, changes in technology, or simply the additional field deployment experience that comes over time. |
 
 Table 6: Definitions
 
@@ -850,27 +895,35 @@ Controls
 
 Page 33
 
-Display of Adverse Drug Reaction Risks User Interface Design Guidance Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 13 January 2009
 
-Microsoft and NHS Connecting for Health Confidential
-
-Folder names Title Case
-
-File names
+| Text | Style |
+| --- | --- |
+| Code | Monospace |
+| Script |  |
+| Other markup languages |  |
+| Interface dialog names | Bold |
+| Field names |  |
+| Controls |  |
+| Display of Adverse Drug Reaction Risks Us | er Interface Design Guidance |
+| Prepared by NHS CUI Programme Team, Versi | on 1.0.0.0 Baseline |
+| Last modified on 13 January 2009 |  |
+|  | Microsoft and NHS Connecting for Health Confidential |
+| t                                                                  Styl | e |
+| der names                                                          Titl | e Case |
+| e names |  |
 
 Table 7: Body Text Styles
 
 ##### 4.3.2 Cross References
 
-Current document – sections Section number only
 
-Current document – figures/tables Caption number only
-
-Other project documents _Italics_ and possibly a footnote
-
-Publicly available documents _Italics_ with a footnote
-
-External Web-based content _Italics_ and a hyperlinked footnote
+| Reference | Style |
+| --- | --- |
+| Current document – sections | Section number only |
+| Current document – figures/tables | Caption number only |
+| Other project documents | Italics and possibly a footnote |
+| Publicly available documents | Italics with a footnote |
+| External Web-based content | Italics and a hyperlinked footnote |
 
 Table 8: Cross Reference Styles
 
@@ -906,21 +959,53 @@ Table 8: Cross Reference Styles
 
 Page 34
 
-Display of Adverse Drug Reaction Risks User Interface Design Guidance Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 13 January 2009
 
-Microsoft and NHS Connecting for Health Confidential
-
-**R15.** Accuracy of drug allergy document: have we improved our practice? Nzuma, F.S., Royal Brompton & Harefield NHS Trust, March 2007
-
-**R16.** Audit of Drug Allergy Documentation, Carrie Fung, West Middlesex University Hospital, 2006
-
-**R17.** Effective drug-allergy checking: methodological and operational issues, Kuperman, G.J. et al, Journal of Biomedical Informatics, Vol 36, Issue 1/2, Pages 70-79, February 2003
-
-**R18.** Strategies to Improve medical Record Documentation of Allergies and Adverse Reactions, Harvard Pilgram Health Care https://www.harvardpilgrim.org/pls/portal/docs/PAGE/PROVIDERS/MEDMGMT/MEDICALRECORD S/IMPROVEMENT_STRATEGIES.PDF
-
-**R19.** Recording of drug allergies: are we doing enough? Radford, A. et al, Journal of Evaluation in Clinical Practice, Vol 13 Issue 1, Pages 130-137, Feb 2007
-
-**R20.** Reporting adverse drug reactions: A guide for healthcare professionals, BMA Board of Science, May 2006
+| Reference Document | Version |
+| --- | --- |
+| R1.               Safety in doses: medication safety incidents in the NHS, NHS National Patient Safety |  |
+| Agency, 2007 |  |
+| R2.               World Health Organization. Requirements for adverse reaction reporting. Geneva: Author, |  |
+| 1975. |  |
+| R3.               Representation in Electronic Patient Records of Allergic Reactions, Adverse Reactions, and | 1.6 |
+| Intolerance of Pharmaceutical Products, Peter Horsfield, NHS, 2008 |  |
+| R4.               SCG Guidance on the Reference of Allergies and Adverse Reaction Information Using NHS | 1.0 |
+| Message Templates, Steve Bentley, NHS, 2008 |  |
+| R5.               Thien, F. Practice Essentials: Drug Hypersensitivity. Medical Journal of Australia 2006 |  |
+| R6.               NHS CUI Programme – Design Guide Entry – Date Display | 3.0.0.0 |
+| R7.               NHS CUI Programme – Medications Management – Medication Line – User Interface Design | 2.0.0.0 |
+| Guidance |  |
+| R8.               NHS CUI Programme – Displaying Graphs and Tables – User Interface Design Guidance | 2.0.0.0 |
+| R9.               NHS CUI Programme – Design Guide Entry – Terminology – Display Standards for Coded | 2.0.0.0 |
+| Information |  |
+| R10.              A clinician’s guide to drug hypersensitivity, Kemp et al. (eds), eMJA The Medical Journal of |  |
+| Australia, MJA 2006; 185 (6): 333-338 |  |
+| R11.              Anaphylaxis: diagnosis and management, Kemp et al. (eds). eMJA The Medical Journal of Australia, |  |
+| MJA 2006; 185 (5): 283-289 |  |
+| R12.              Audit of Drug Allergy Documentation, Bedford General Hospital |  |
+| http://www.londonpharmacy.nhs.uk/educationandtraining/prereg/pfizerProjectAwards2008/Rupam% |  |
+| 20Purohit%20Bedford%20general%20Hospital.doc |  |
+| R13.              Adverse Drug Reactions: Types and Treatment Options, Riedl, M. and Casillas, A. American Family |  |
+| Physician, November 1, 2003 |  |
+| R14.              Policy for the Documentation of Allergy Status, Department of Health, Social Services and Public |  |
+| Safety (Northern Ireland) , http://www.dhsspsni.gov.uk/policy_allergy.pdf |  |
+| Display of Adverse Drug Reaction Risks User Interface Design Guidance |  |
+| Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline |  |
+| Last modified on 13 January 2009 |  |
+| Microsoft and NHS Connecting for Hea | lth Confidential |
+| Reference Document                                                                                                        Ver | sion |
+| R15.             Accuracy of drug allergy document: have we improved our practice? Nzuma, F.S., Royal Brompton |  |
+| & Harefield NHS Trust, March 2007 |  |
+| R16.             Audit of Drug Allergy Documentation, Carrie Fung, West Middlesex University Hospital, 2006 |  |
+| R17.             Effective drug-allergy checking: methodological and operational issues, Kuperman, G.J. et al, |  |
+| Journal of Biomedical Informatics, Vol 36, Issue 1/2, Pages 70-79, February 2003 |  |
+| R18.             Strategies to Improve medical Record Documentation of Allergies and Adverse Reactions, Harvard |  |
+| Pilgram Health Care |  |
+| https://www.harvardpilgrim.org/pls/portal/docs/PAGE/PROVIDERS/MEDMGMT/MEDICALRECORD |  |
+| S/IMPROVEMENT_STRATEGIES.PDF |  |
+| R19.             Recording of drug allergies: are we doing enough? Radford, A. et al, Journal of Evaluation in Clinical |  |
+| Practice, Vol 13 Issue 1, Pages 130-137, Feb 2007 |  |
+| R20.             Reporting adverse drug reactions: A guide for healthcare professionals, BMA Board of Science, May |  |
+| 2006 |  |
 
 Table 9: References
 
@@ -1046,35 +1131,74 @@ ADR-0049 3.3.7 For each event phrase, feature the role of the clinician who reco
 
 Page 37
 
-Display of Adverse Drug Reaction Risks User Interface Design Guidance Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 13 January 2009
 
-Microsoft and NHS Connecting for Health Confidential
-
-ADR-0050 3.3.7 For each event phrase, feature the location in which the event was recorded (for example, ‘Hammersmith Hospital’). This may be included in the 'further details' sections
-
-ADR-0051 3.3.8 Where the clinician has checked if the patient has any adverse drug reaction risks and has concluded that there are none, the system should display ‘No known adverse drug reaction risks’
-
-ADR-0052 3.3.8 Where the system displays ‘No known adverse drug reaction risks’, it should also display the date and time when this phrase was recorded
-
-ADR-0053 3.3.8 Where the system displays ‘No known adverse drug reaction risks’, it should also display provenance information relating to the author of the phrase, such as the name, role and, possibly, location of the author.
-
-ADR-0054 3.3.8 Where no clinician has checked if the patient has any adverse drug risks, the system should display ‘Risk status unknown’
-
-ADR-0055 3.3.9 If, upon displaying the risks, the term describing the medication will not trigger decision support the system should communicate this (for example, if the term is not expressed in structured terminology or if the term is not in the decision support system subset)
-
-ADR-0056 3.3.9 Communicate the fact that a medication will not trigger decision support next to the medication label
-
-ADR-0057 3.3.9 Communicate the potential lack of a decision support service by displaying either an icon with a hoverover message and/or appropriate text (depending upon space constraints)
-
-ADR-0058 3.3.10 Maintain a structured format to the display of risk phrases in narrative text, as opposed to in a list
-
-ADR-0059 3.3.10 Display risk phrases on successive lines rather than displaying them in a continuous line
-
-ADR-0060 3.3.10 Provide information about the causative agent (medication) in a narrative text expression of an adverse drug reaction risk
-
-ADR-0061 3.3.10 Provide information about the past reactions in the narrative text
-
-ADR-0062 3.3.10 Ensure that the text indicates that the medication relates a risk of adverse drug reaction.
+| Reference | Section | Description |
+| --- | --- | --- |
+| ADR-0001 | 3.3.1 | Feature multiple levels of display: an immediate view (‘Level 1’) containing the risk phrase (comprising the causative agent and any past reactions) and a set of other views (‘Level 2’) that are not immediately visible and contain supporting events data, if such event data and linkages exist |
+| ADR-0002 | 3.3.1 | Feature a mechanism that allows the user to access relevant items within the ‘Level 2’ view from individual risks in the ‘Level 1’ view, if such event data and linkages exist |
+| ADR-0003 | 3.3.1 | Feature a mechanism that allows the user to return to the ‘Level 1’ list |
+| ADR-0004 | 3.3.1 | Link each risk phrase in the ‘Level 1’ view to one or more related event phrases in the ‘Level 2’ view, if such event data and linkages exist. |
+| ADR-0005 | 3.3.1 | In the ‘Level 1’ view, the causative agent column should be displayed at the far left-hand side of the table |
+| ADR-0006 | 3.3.1 | In the ‘Level 1’ view, the past reactions column should be displayed to the right of the causative agent column |
+| ADR-0007 | 3.3.1 | Feature a mechanism that allows the user to access further details from the ‘Level 2’ line items, if such event data and linkages exist |
+| ADR-0008 | 3.3.1 | Arrange the list according to a consistent (default) order |
+| ADR-0009 | 3.3.1 | Order the list alphabetically on the generic medication name (causative agent) |
+| ADR-0010 | 3.3.2 | Display the causative agent, which comprises a single medication, excipient or drug class |
+| ADR-0011 | 3.3.2 | Display the causative agent in the immediate view (‘Level 1’). |
+| ADR-0012 | 3.3.2 | The causative agent should be displayed in the same text in which it was recorded. This may be typically the Virtual Therapeutic Moiety (VTM) or drug class name, or, less commonly, the Trade Family (TF) name or the name of a medication excipient. |
+| ADR-0013 | 3.3.2 | Do not feature two or more risk phrases that contain the same causative agent |
+| ADR-0014 | 3.3.2 | The display must be able to handle both encoded and unencoded data relating to the causative agent |
+| ADR-0015 | 3.3.2 | Where possible, the causative agent should be displayed as encoded data |
+| ADR-0016 | 3.3.2 | Do not display information about the form, route or dosage of the medication in the Level 1 view |
+| ADR-0017 | 3.3.2 | In Level 1 view, display a description of any linked past reactions, if available |
+| ADR-0018 | 3.3.2 | Communicate descriptions of past reactions as key words, ideally only one or two per reaction, although this will depend upon the available data |
+| ADR-0019 | 3.3.2 | Where information about the past reactions for a given ADR risk is not known, communicate that this information is not known |
+| ADR-0020 | 3.3.2 | The display must be able to handle multiple past reactions for a single causative agent |
+| ADR-0021 | 3.3.2 | For a given risk, the display should be able to distinguish between those reactions which occurred simultaneously and those which occurred on different occasions, that is, in separate clinical episodes. |
+| ADR-0022 | 3.3.2 | Where multiple reactions occurred for the same reaction event (that is, simultaneously), display the character ‘+’ in between them or the word ‘AND’ in capital letters. For example, if the patient experienced a rash and nausea at the same time, the words ‘rash + nausea’ would be displayed, or ‘rash AND nausea’ |
+| ADR-0023 | 3.3.2 | Where multiple reactions occurred for different reaction events (that is, separated in time), punctuate them with a comma |
+| ADR-0024 | 3.3.2 Dis Pre Las | Clearly label the causative agents play of Adverse Drug Reaction Risks User Interface Design Guidance pared by NHS CUI Programme Team, Version 1.0.0.0 Baseline t modified on 13 January 2009 |
+|  |  | Microsoft and NHS Connecting for Health Confidential |
+| Reference   S | ection      D | escription |
+| ADR-0025    3 | .3.2        L | abel the causative agents ‘Drug / substance’ for example, as a column header. |
+| ADR-0026    3 | .3.2        C | learly label the past reactions |
+| ADR-0027    3 | .3.2        L | abel the past reactions ‘Past reactions’. |
+| ADR-0028    3 | .3.2        C | learly label the whole list |
+| ADR-0029    3 | .3.2        L | abel the list ‘Adverse drug reaction risks’. |
+| ADR-0030    3 | .3.3        I a | n Level 2, feature at least one event phrase, preferably an encoded expression, if such event data is vailable and has been linked to the risk data. |
+| ADR-0031    3 | .3.3        I o f | n those instances where information about a reaction event is not known, feature an entry comprising ther justification, such as reference to a patient’s assertion of their ADR condition. This may comprise ree text. |
+| ADR-0032    3 | .3.3        S e | upporting data may comprise information which is not directly associated with a recorded reaction vent, such as a patient’s account of their allergy history. |
+| ADR-0033    3 | .3.4        I c | n the ‘Level 1’ view the medication column must be able to expand to a default width of at least 44 haracters, allowing for a maximum two-line wrap. Note Where a medication wraps onto a second row, it should not split any words. The new row should occur at a space in the phrase. |
+| ADR-0034    3 | .3.4        I | n the ‘Level 1’ view, the data should be displayed in a tabular format. |
+| ADR-0035    3 | .3.4        F | eature the ‘Level 2’ supporting events data in a tabular format. |
+| ADR-0036    3 | .3.4        F m | ollow the guidance featured in the CUI Medication Line guidance which addresses how to format edication names. |
+| ADR-0037    3 | .3.4        I c | n the ‘Level 1’ view, feature all encoded medication names (causative agent) in bold and in lower ase. |
+| ADR-0038    3 | .3.4        F c | eature all unencoded (that is, written in free text) medication names in normal weight and in lower ase. |
+| ADR-0039    3 | .3.4        F | eature light shading on alternate rows in the tables. |
+| ADR-0040    3 | .3.4        F | eature a highlight colour for hover-over of lines. |
+| ADR-0041    3 | .3.4        D | o not feature black triangles as navigation controls |
+| ADR-0042    3 | .3.5        F s | eature a date for each discrete event item in the ‘Level 2’ view. This includes record-entry events, uch as ‘risk identified’ or ‘risk confirmed’. |
+| ADR-0043    3 | .3.5        D | o not feature dates in the ‘Level 1’ view |
+| ADR-0044    3 | .3.5        F e | or each event item listed in Level 2, display, as a default, the date of entry, unless, at the point of ntry, a different date has been specified (such the actual date on an event). |
+| ADR-0045    3 | .3.5        A | llow for the display of partial dates, where appropriate (in Level 2). |
+| ADR-0046    3 | .3.6        F ‘ | or each ‘source’ description, feature the ‘source' who first articulated the information (for example, Patient’, ‘Doctor’, ‘Carer’) |
+| ADR-0047    3 | .3.6        F e | or each ‘source’ description, feature the encounter or situation in which the event took place (for xample, ‘Past Medical History’, ‘Admissions Triage’) |
+| ADR-0048    3 | .3.7        F | or each event phrase, feature the name of the clinician who recorded the event |
+| ADR-0049    3 | .3.7        F ‘ Disp Prep Last | or each event phrase, feature the role of the clinician who recorded the event (for example, ‘Nurse’, F2’, ‘Registrar’) lay of Adverse Drug Reaction Risks User Interface Design Guidance ared by NHS CUI Programme Team, Version 1.0.0.0 Baseline modified on 13 January 2009 |
+|  |  | Microsoft and NHS Connecting for Health Confidential |
+| ADR-0050 | 3.3.7 | For each event phrase, feature the location in which the event was recorded (for example, ‘Hammersmith Hospital’). This may be included in the 'further details' sections |
+| ADR-0051 | 3.3.8 | Where the clinician has checked if the patient has any adverse drug reaction risks and has concluded that there are none, the system should display ‘No known adverse drug reaction risks’ |
+| ADR-0052 | 3.3.8 | Where the system displays ‘No known adverse drug reaction risks’, it should also display the date and time when this phrase was recorded |
+| ADR-0053 | 3.3.8 | Where the system displays ‘No known adverse drug reaction risks’, it should also display provenance information relating to the author of the phrase, such as the name, role and, possibly, location of the author. |
+| ADR-0054 | 3.3.8 | Where no clinician has checked if the patient has any adverse drug risks, the system should display ‘Risk status unknown’ |
+| ADR-0055 | 3.3.9 | If, upon displaying the risks, the term describing the medication will not trigger decision support the system should communicate this (for example, if the term is not expressed in structured terminology or if the term is not in the decision support system subset) |
+| ADR-0056 | 3.3.9 | Communicate the fact that a medication will not trigger decision support next to the medication label |
+| ADR-0057 | 3.3.9 | Communicate the potential lack of a decision support service by displaying either an icon with a hover- over message and/or appropriate text (depending upon space constraints) |
+| ADR-0058 | 3.3.10 | Maintain a structured format to the display of risk phrases in narrative text, as opposed to in a list |
+| ADR-0059 | 3.3.10 | Display risk phrases on successive lines rather than displaying them in a continuous line |
+| ADR-0060 | 3.3.10 | Provide information about the causative agent (medication) in a narrative text expression of an adverse drug reaction risk |
+| ADR-0061 | 3.3.10 | Provide information about the past reactions in the narrative text |
+| ADR-0062 | 3.3.10 | Ensure that the text indicates that the medication relates a risk of adverse drug reaction. |
 
 Table 10: Reference Summary of Guidance
 
@@ -1147,33 +1271,68 @@ External literature was found using Google, PubMed and find-health-articles.com,
 
 ##### B.4.1 Participant Description
 
-12 participants were interviewed separately. Each had either volunteered through the NHS CFH Event Management System signup (EMS) or had been contacted by the CUI having taken part in previous CUI work. Five out of 12 respondents had previously taken part in CUI clinical engagement for other work areas. Table 12: Interview Participants shows a summary of the participants’ profiles:
 
-303 Nurse Renal (outpatients) Consultant Teaching Hospital  - Med
-
-304 Pharmacist Management Assc Director Teaching Hospital Cerner R.0, (iSoft), Med / High electronic discharge
-
-305 Pharmacist Research Junior Teaching Hospital ServeRx Med
-
-306 Doctor On rotation F2 DGH  - Med / High
-
-307 GP GP Senior GP Meditel, Micro-Doc, High EMIS LV / GV / PCS
-
-308 Doctor Paediatrics Assc Specialist DGH (Foundation)  - Med
-
-309 Pharmacist EPR Senior Teaching Hospital iSoft CM Med
-
-310 Doctor Care of the Elderly ST3 DGH (Foundation) Electronic discharge Med
-
-311 Nurse / Change Critical Care / facilitator change management
-
-Sister Teaching Hospital Cerner Low / Med
-
-312 Pharmacist Research Senior (Prof) Teaching Hospital ServeRx High
-
-313 Doctor A&E / on rotation F2 Teaching Hospital EMIS LV, Vision, Med Symphony
-
-314 Doctor A&E / on rotation F1 Teaching Hospital EMIS, Vision High
+| B.1 | Abstract |
+| --- | --- |
+| The UK | National Health Service (NHS) Common User Interface (CUI) programme is a partnership |
+| betwee | n Microsoft® and NHS Connecting for Health (NHS CFH), which is part the NHS National |
+| Progra | mme for Information Technology (NPfIT). |
+| As par | t of CUI, the Clinical Applications and Patient Safety (CAPS) project has the goal of ensuring |
+| that s | oftware applications used by the NHS enhance patient safety. To achieve this, CAPS |
+| provid | es software developers with user interface design guidelines derived through a user-centric |
+| develo | pment process that includes explicit patient-safety evaluations. |
+| This s | ummary describes key findings from initial qualitative research carried out in August 2008 by |
+| the CU | I CAPS team on Adverse Drug Reaction Risks (ADR Risks). These findings are a subset |
+| from a | larger internal report prepared for the CUI CAPS ADR Risks team. |
+| Purpos | e: |
+| To und | erstand current practice and hazards for ADR Risk display, to understand the purpose |
+| behind | ADR Risk display in clinical contexts, and to gain clinical feedback on early design |
+| concep | ts. With the overall aim of providing design requirements for ADR Risk display. |
+| Method | : |
+| Interv | iews: semi-structured telephone interviews with 12 Healthcare Professionals (HCPs), |
+| incorp | orating wireframe illustrations of early design concepts. Literature search: analysis of existing |
+| NHS CF | H documentation on Allergies / ADR Risks and external references on Allergy / ADR Risk |
+| docume | ntation. |
+| B.2 | Research Objectives |
+| To gai | n an understanding of: |
+| 1 | . Current paper and electronic practices for documenting ADR Risks (such as allergies) in a variety of clinical contexts |
+| 2 | . Current advantages and disadvantages with these practices, in particular known and potential patient safety hazards with electronic display of ADR Risks |
+| 3 | . What purpose the documentation of ADR Risks has in clinical contexts |
+| 4 | . The potential impact of, and hazards associated with, implementing the existing NHS CFH recommendations on ADR Risk data structure for electronic records, such as by the categorisation of ADR Risks |
+| 5 | . Clinical feedback on specific design areas of ADR Risk display, such as the display of the nature of reaction and stating positive absence |
+| B.3 | Research Design |
+| Interv | iews were semi-structured and incorporated early design concepts for ADR Risk display. |
+| These | concepts were wireframe designs based on existing NHS CFH and CUI work, and were |
+| used a | s a means to stimulate discussion around key areas. Interviews were carried out by |
+| teleph | one and lasted one hour. Detailed notes from the interviews were qualitatively analysed |
+| using | thematic coding. Display of Adverse Drug Reaction Risks User Interface Design Guidance Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 13 January 2009 |
+|  | Microsoft and NHS Connecting for Health Confidential |
+| The li | terature analysis was based on:  NHS CFH documentation on Allergy / ADR data structures provided by the CUI NHS CFH Specific Audience  Previous ADR Risks groundwork done by the CUI project and NHS CFH  Material collected during previous CUI research – not specific to ADR Risks  External literature found through the internet |
+| Extern | al literature was found using Google, PubMed and find-health-articles.com, using search |
+| criter | ia such as ‘drug hypersensitivity’, ‘drug allergy documentation’ and ‘strategies allergy |
+| docume | ntation’. Analysis focused on published material from healthcare journals or health |
+| organi | sations such as the World Health Organisation (WHO) and UK National Patient Safety |
+| Agency | (NPSA). |
+| B.4 | Results |
+| B.4.1 | Participant Description |
+| 12 par | ticipants were interviewed separately. Each had either volunteered through the NHS CFH |
+| Event | Management System signup (EMS) or had been contacted by the CUI having taken part in |
+| previo | us CUI work. Five out of 12 respondents had previously taken part in CUI clinical |
+| engage | ment for other work areas. Table 12: Interview Participants shows a summary of the |
+| partic | ipants’ profiles: |
+| Sessio | n Job Role                      Speciality          Level           Site                Systems Used              Computer Experience |
+| 303 | Nurse                  Renal (outpatients) Consultant      Teaching Hospital   -                         Med |
+| 304 | Pharmacist             Management          Assc Director   Teaching Hospital   Cerner R.0, (iSoft),      Med / High electronic discharge |
+| 305 | Pharmacist             Research            Junior          Teaching Hospital   ServeRx                   Med |
+| 306 | Doctor                 On rotation         F2              DGH                 -                         Med / High |
+| 307 | GP                     GP                  Senior          GP                  Meditel, Micro-Doc,       High EMIS LV / GV / PCS |
+| 308 | Doctor                 Paediatrics         Assc Specialist DGH (Foundation)    -                         Med |
+| 309 | Pharmacist             EPR                 Senior          Teaching Hospital   iSoft CM                  Med |
+| 310 | Doctor                 Care of the Elderly ST3             DGH (Foundation)    Electronic discharge      Med |
+| 311 | Nurse / Change         Critical Care /     Sister          Teaching Hospital   Cerner                    Low / Med facilitator            change management |
+| 312 | Pharmacist             Research            Senior (Prof)   Teaching Hospital   ServeRx                   High |
+| 313 | Doctor                 A&E / on rotation   F2              Teaching Hospital   EMIS LV, Vision,          Med Symphony |
+| 314 | Doctor                 A&E / on rotation   F1              Teaching Hospital   EMIS, Vision              High |
 
 Table 11: Interview Participants
 
@@ -1383,7 +1542,66 @@ Online surveys covered a subset of the interview’s design areas and similarly 
 
 ##### C.4.1 Participant Description Interviews
 
-13 participants were interviewed separately. Each had either volunteered through the NHS CFH EMS signup or had been recruited by an HCP who had volunteered. Three out of 13 respondents had previously taken part in CUI clinical engagement for other work areas.
+
+| C.1 | Abstract |
+| --- | --- |
+| The UK | National Health Service (NHS) Common User Interface (CUI) programme is a partnership |
+| betwee | n Microsoft® and NHS Connecting for Health (NHS CFH), which is part the NHS National |
+| Progra | mme for Information Technology (NPfIT). |
+| As par | t of CUI, the Clinical Applications and Patient Safety (CAPS) project has the goal of ensuring |
+| that s | oftware applications used by the NHS enhance patient safety. To achieve this, CAPS |
+| provid | es software developers with user interface design guidelines derived through a user-centric |
+| develo | pment process that includes explicit patient-safety evaluations. |
+| This s | ummary describes key findings from user research carried out in September 2008 by the CUI |
+| CAPS t | eam on the display of Adverse Drug Reaction Risks (ADR Risks). These findings are a |
+| subset | from a larger internal report prepared for the CUI CAPS ADR Risks team. |
+| Purpos | e: |
+| To gai | n clinical feedback on design concepts for displaying ADR Risks in electronic systems. |
+| Method | : |
+| Interv | iews: structured interviews with 13 Healthcare Professionals (HCPs) eliciting HCP |
+| prefer | ences and qualitative feedback on design alternatives. Online survey: survey with 56 HCPs |
+| elicit | ing HCP preferences and qualitative feedback on a subset of the design alternatives used in |
+| interv | iew. |
+| Key Re | sults: |
+| Based | on clinician preference and rationale: |
+|  | Do not categorise risks into allergy / ADR / intolerance |
+|  | Display a succinct summary of past reactions in the risk statement, clarifying that they are past reactions |
+|  | Position the causative agent first in the risk statement |
+|  | Do not display dates at the top level, as long as they are easily accessible |
+|  | Allow immediate access to the information on supporting events |
+| C.2 | Research Objectives |
+| To gat | her HCP design preferences, qualitative feedback and possible patient safety hazards of CUI |
+| ADR Ri | sk display designs. |
+| Focusi | ng on the areas of: |
+|  | Risk categorisation |
+|  | Displaying the nature of reaction |
+|  | Inclusion criteria of an ADR Risk List |
+|  | Sort orders |
+|  | Headings |
+|  | Dates |
+|  | Layout |
+|  | Positive absence and null states Display of Adverse Drug Reaction Risks User Interface Design Guidance Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 13 January 2009 |
+|  | Microsoft and NHS Connecting for Health Confidential  Levels below the risk statement  Drug class  Representing an ADR Risk as narrative  Decision Support absence |
+| C.3 | Research Design |
+| Interv | iews were structured, lasted one hour and carried out in person or by telephone. Participants |
+| were t | aken through wireframe design alternatives for each area of investigation and asked for |
+| prefer | ence based on patient safety criteria. Other qualitative feedback was elicited covering |
+| ration | ale for preference, design fit with current and best practice, design understandability and any |
+| potent | ial hazards resulting from the designs. Detailed notes from the interviews were qualitatively |
+| analys | ed using thematic coding. |
+| Online | surveys covered a subset of the interview’s design areas and similarly elicited HCP |
+| prefer | ences for design alternatives, with the option to record rationale for preference and other |
+| qualit | ative feedback. The survey was distributed by NHS CFH to NHS employees who had signed- |
+| up to | participate through the NHS CFH Events Management System (NHS CFH EMS) or who had |
+| provid | ed their contact details as part of previous CUI work. Recipients were able to forward the |
+| survey | to colleagues. No remuneration was supplied for completing the survey. The survey took |
+| 20-40 | minutes to complete. |
+| C.4 | Results |
+| C.4.1 | Participant Description |
+| Interv | iews |
+| 13 par | ticipants were interviewed separately. Each had either volunteered through the NHS CFH |
+| EMS si | gnup or had been recruited by an HCP who had volunteered. Three out of 13 respondents |
+| had pr | eviously taken part in CUI clinical engagement for other work areas. |
 
 Table 12: Interview Participants shows a summary of the participants’ profiles:
 
@@ -1427,68 +1645,26 @@ All participants had used some kind of electronic patient record, which meant th
 
 ##### Online Survey
 
-56 respondents completed the survey during the seven days that it was live. Table 13: Survey Respondents shows a summary of the respondents’ profiles:
 
-Ward Manager 2%
-
-Midwife 2%
-
-Other Nurse 7%
-
-Junior Doctor 19%
-
-General practitioner 12%
-
-Medical Consultant 9%
-
-Other doctor 2%
-
-Anaesthetist 2%
-
-Physiotherapist 2%
-
-Allied health professional 2%
-
-Pharmacist 25%
-
-Healthcare informatician 2%
-
-Healthcare manager 5%
-
-Software - manager 1%
-
-Other 9%
+| Role | Respondents n=56 |
+| --- | --- |
+| Ward Manager | 2% |
+| Midwife | 2% |
+| Other Nurse | 7% |
+| Junior Doctor | 19% |
+| General practitioner | 12% |
+| Medical Consultant | 9% |
+| Other doctor | 2% |
+| Anaesthetist | 2% |
+| Physiotherapist | 2% |
+| Allied health professional | 2% |
+| Pharmacist | 25% |
+| Healthcare informatician | 2% |
+| Healthcare manager | 5% |
+| Software - manager | 1% |
+| Other | 9% |
 
 Table 13: Survey Respondents
-
-Roles that were not represented by survey respondents have been removed from the table.
-
-Page 46
-
-Display of Adverse Drug Reaction Risks User Interface Design Guidance Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 13 January 2009
-
-Microsoft and NHS Connecting for Health Confidential
-
-Other respondent descriptions:
-
-  - 40% had not taken part in CUI clinical engagement before
-
-  - 76% had worked in NHS for more than five years
-
-  - 71% worked in secondary care, 16% worked in general practice
-
-  - 75% had created or modified a spreadsheet calculation function, implying a high familiarity
-with computer use
-
-  - Respondents were from diverse geographical locations
-
-##### C.4.2 Design Areas Categorising Risks
-
-  - Survey respondents were not able to consistently categorise a reaction into: ADR / allergy /
-intolerance based on short reaction statements, many also described problems in performing the task
-
-  - Many interviewees struggled to describe the difference between ADR and intolerance
-
   - Though some interviewees felt risk categorisation might be useful, they felt it was likely to
 be unreliable
 
