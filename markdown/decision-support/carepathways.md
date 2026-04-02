@@ -560,6 +560,95 @@ immediate tasks
 
 ![](carepathways_assets/carepathways.pdf-15-0.png)
 
+
+|  | Where is the patient on the pathway? |
+| --- | --- |
+|  | How far along is the patient from the start of the pathway? |
+|  | How far is it for the patient to the end of the pathway? |
+|  | How many pathways is the patient on? |
+| ew o | nly a pathway that is of interest, whilst diminishing other pathways (letting them fade to |
+| e ba | ckground) |
+| mmun | icate clearly when something goes wrong within the pathway, and when and where |
+| norm | alities for a patient occur |
+| mmun | icate the stages and bundles that have gone right |
+| ovid | e historical information to answer questions such as: |
+|  | How did this patient arrive on this pathway? |
+|  | Who is delivering this care? |
+|  | What is the team’s responsibility? |
+| ow c | learly any national guidance that drives a particular pathway |
+| ow t | he key time targets, if they have been met, or if they will be missed |
+| ke i | nformation on geographical locations of the care being delivered easily accessible NHS CUI Design Guide Workstream, Care Pathways Conceptual Modelling Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 28 March 2007 |
+|  | Microsoft and NHS Connecting for Health Confidential |
+| w ho | w pathways (in cases where a patient is on more than one pathway) are joined |
+| ethe | r, and the key decisions or assessments that have sent a patient down those particular |
+| tes |  |
+| ual | Vocabulary |
+| to | show the range and variety of states that have to be dealt with in a live implementation. |
+| ted | designs are wireframes only and not pixel-level designs. |
+| tion | taken during the design stage was that the colour, pixels and particular widget-sets |
+| f th | at level of implementation. |
+| he d | esigns enumerate the features and elements that such an implementation would have |
+| whic | h are: |
+| hway | title |
+| hway | stage title |
+| hway | status icon, colour, description |
+| hway | minimise, maximise and ‘mediumise’ icons |
+| ndar | y of care separator, title |
+| ndar | y of care collapse and open widget |
+| ge c | ontainer |
+| ge c | ontainer past, current, future |
+| us f | or stage |
+| rent | stage indicator icon |
+| dle | typography, iconography: past, completed, failed, future, unattempted, variant, warning, |
+| so | on |
+| rt o | f linear pathway |
+| of | linear Pathway |
+| l fo | r pathway |
+| come | for pathway |
+| ssin | g care boundary arrow |
+| laps | ed stage |
+| laps | ed multiple stages container |
+| ge s | tatus icon - success, failure and warning |
+| ge m | ouse-over - extra information |
+| m ic | on |
+| o ic | on |
+| get | time icon |
+| e ty | pography for actual, target, and missed target statuses |
+| itte | r drag pointer icon NHS CUI Design Guide Workstream, Care Pathways Conceptual Modelling Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 28 March 2007 |
+|  | Microsoft and NHS Connecting for Health Confidential |
+| ges | begin, end icons and description (for example, day of operation) |
+| ion | point |
+| ion | typography |
+| tes, | sub-pathways heading and arrow, with and without focus, in past, current and |
+| ed m | odes |
+| ycle | s) |
+| s, r | eviews and care stages on cycles |
+| ontr | ols to advance and retard phases and cycles |
+| here | ’ indicator |
+| us i | s here indicator |
+| eats | indicator with periodicity |
+| min | i version of the cycle diagram NHS CUI Design Guide Workstream, Care Pathways Conceptual Modelling Prepared by NHS CUI Programme Team, Version 1.0.0.0 Baseline Last modified on 28 March 2007 |
+|  | Microsoft and NHS Connecting for Health Confidential |
+| esig | ns Discussion Wireframes |
+| M | ultiple Pathways |
+| ted | design of wireframes supports user needs by providing information related to the |
+| (as | illustrated in Figure 1): |
+| le b | ar with name of pathway |
+| ck p | athways vertically (if there is more than one pathway) |
+| vide | access to expanding and collapsing on the right (as window controls) |
+| w mi | nimal state information for collapsed pathways |
+| w pa | thways that are in an abnormal state together with the reasons |
+| w th | e number of pathways that the patient is currently on |
+| ows | users to shrink (but not entirely forget) the pathways that are not relevant to their |
+| edia | te tasks |
+| vide | minimal (but some) context about other pathways |
+| ble | users to get to more detail if they require |
+| w an | ything abnormal so that the user can decide if it’s relevant |
+| laps | ed Pathway                                                      Pathway with abnormal status |
+| play | s minimal content, in       Open Pathway                        Show status with contrast or |
+| s ca | se, the name of the         Displays relevant content.          colour change, icon, status (in |
+| rent | stage.                                                         this case, paused) and reason for status (in this case, Hospitalisation). |
+
 Figure 1: Multiple Pathways
 
 ![](carepathways_assets/carepathways.pdf-15-1.png)
@@ -616,6 +705,13 @@ The care boundaries demonstrate the key patient handover periods. From the user�
 
 ![](carepathways_assets/carepathways.pdf-17-1.png)
 
+
+| Handover across boundary | Boundary of care/Start of new sub-pathway |
+| --- | --- |
+| Arrows are not normally necessary to show the flow from left | ‘Enchained’ sub-pathways have distinct |
+| to right but are helpful at key moments, such as where the | moments where the responsibility for care is |
+| patient crosses boundaries. | transferred. |
+
 Figure 3: Care Boundaries
 
 ##### 4.4.4 Showing Everything
@@ -651,13 +747,34 @@ Microsoft and NHS Connecting for Health Confidential
 
 ![](carepathways_assets/carepathways.pdf-18-3.png)
 
+
+| Collapse adjacent bundles | If there are still too many stages to show at once, |
+| --- | --- |
+| The adjacent bundles are collapsed if | the group of adjacent stages is shown as |
+| there are too many stages. | collapsed. |
+| Stage open             More bundles equals | Indicate focus                    Current stage is blue. |
+| p.         Show all ‘bundles’     deeper boxes | Keep open or                      This is not the same as |
+| within a stage.        Provide at a glance, | uncollapsed as many               focus. |
+
 Figure 4: Showing Everything
 
-Another use for care pathways is to objectively provide information on met and missed targets. These targets do not refer to the time a patient takes to respond to a treatment, but rather the actual time the HCP takes to complete the well-understood procedure.
 
-Displaying these targets will allow the user to have a clear idea of how long a pathway will take before it is completed. In addition, it will allow the user to understand that targets that have been missed and/or successfully achieved as shown in Figure 5:
-
-Full details Displaying full details for every stage would be distracting but they should be accessible, such as on mouse-over
+| contains few or many | the one with focus. | the patient is on the |
+| --- | --- | --- |
+| bundles. |  | pathway’. ‘Focus’ means ‘where the HCP last clicked, or moved with the stylus or arrow keys, the content of which they want to view or interact with. |
+|  |  |  |
+| formation on met and missed | targets. These |  |
+| d to a treatment, but rather | the actual time the |  |
+|  |  |  |
+| ar idea of how long a pathwa | y will take before |  |
+| derstand that targets that h | ave been missed |  |
+|  |  |  |
+| target time         Missed t | argets                       Targe | t times |
+| Knowing | that a                       The t | arget times for the final |
+| time taken to      sub-path | way or key target            stage | of a pathway. |
+| sub-pathway.        time was | missed might |  |
+| warrant | a different visual |  |
+| display. |  |  |
 
 Figure 5: Met and Missed Targets
 
@@ -688,6 +805,13 @@ Group stages that belong together, such as Day of Operation. This is a concept t
 ![](carepathways_assets/carepathways.pdf-19-1.png)
 
 ![](carepathways_assets/carepathways.pdf-19-2.png)
+
+
+| Collapse Chevrons | Mouse-Over Split Pane Cursor | Group stages that belong together, |
+| --- | --- | --- |
+| Close the sub-pathway. | Indicates user can drag this boundary to resize boundary. | such as Day of Operation. This is a concept that is neither a sub-pathway, nor a stage, nor a care boundary. However, it needs to be visible but the user does not need to interact with this. |
+| Compound group | Open Chevrons |  |
+| Set of stages collapsed | to a single symbol.    Open this sub | -pathway. |
 
 Figure 6: Sub-Pathways
 
@@ -737,6 +861,14 @@ Key decision point
 
 ![](carepathways_assets/carepathways.pdf-21-1.png)
 
+
+| Actions following particular decision. | A single line is used for the title of |
+| --- | --- |
+| decision. |  |
+| The use of bold capitals emphasise that | the pathway or stage. |
+| The simplest possible language is |  |
+| this is not another bundle.                     used to make a branch clear. |  |
+
 Figure 8: Decision Making
 
 ##### 4.4.9 Long Term Cycles
@@ -771,13 +903,22 @@ Current Phase Provides access to other phases of care.
 
 ![](carepathways_assets/carepathways.pdf-22-1.png)
 
+
+| Current Phase | Spinner controls | Future stages on this |
+| --- | --- | --- |
+| Provides access to          Current | Provide access to previous | cycle |
+| other phases of             stage | cycles of same phase. | Shown as unattempted. |
+| care. |  |  |
+| iamond | Repeats a | rrow |
+| ndicates decision or reassessment. Circle Indic | ates care stage.       Shows the | re is no projected end to this repeating cycle. |
+
 Figure 9: Long Term Cycles
 
 ##### 4.4.10 Phases of Care
 
-A phase is a major shift in the patient state which warrants a major shift in a patient’s care plan. Long term conditions typically have more than one phase, for which a care could be cyclical. Repeating an acute event causes another shift in the care phase.
 
-Figure 10 shows visual mechanisms for visited and unvisited phases:
+| Yet to be visited. | Visited phase |
+| --- | --- |
 
 Figure 10: Phases of Care
 
@@ -794,11 +935,9 @@ Microsoft and NHS Connecting for Health Confidential
 
 ##### 4.4.11 Linked Focus
 
-Shifting focus in the linear diagram shifts focus on the cyclical diagram. This is also true for shifting the focus from the cyclical diagram to the linear diagram.
 
-This feature allows the user to explore other phases and other stages of the pathway, and helps them to understand implicitly that the two interfaces are representations of the same thing. This is illustrated in Figure 11:
-
-Show focus Stage with focus Stage patient is at
+| Show focus | Stage with focus | Stage patient is at |
+| --- | --- | --- |
 
 Figure 11: Linked Focus
 
@@ -920,7 +1059,9 @@ Microsoft and NHS Connecting for Health Confidential
 
 ##### 4.6.3 Patient Admitted to Ward
 
-The patient passes the fast track criteria in the Emergency Department and is admitted to the care of the Orthopaedic team in a ward, as illustrated in Figure 15: Click
+
+| the Orthopaedic team in a ward, as illustrated in Figure 15: | Click |
+| --- | --- |
 
 Figure 15: Patient Admitted to Ward
 
@@ -1009,44 +1150,34 @@ Microsoft and NHS Connecting for Health Confidential
 
 #### 5.1 Terms and Abbreviations
 
-CRE Care Record Elements
 
-CUI Common User Interface
-
-GUI Graphical User Interface
-
-HCP Health Care Professional
-
-NHS National Health Service
-
-NHS CFH NHS Connecting for Health
-
-NHS CRS NHS Care Records Service
-
-NOF Neck of Femur
-
-NPfIT National Programme for Information Technology
-
-OT Occupational Therapy
-
-PD Parkinson’s Disease
-
-SHO Senior House Officer
+| Abbreviation | Definition |
+| --- | --- |
+| CRE | Care Record Elements |
+| CUI | Common User Interface |
+| GUI | Graphical User Interface |
+| HCP | Health Care Professional |
+| NHS | National Health Service |
+| NHS CFH | NHS Connecting for Health |
+| NHS CRS | NHS Care Records Service |
+| NOF | Neck of Femur |
+| NPfIT | National Programme for Information Technology |
+| OT | Occupational Therapy |
+| PD | Parkinson’s Disease |
+| SHO | Senior House Officer |
 
 Table 1: Terms and Abbreviations
 
 #### 5.2 Definitions
 
-NHS Entity Within this document, defined as a single NHS organisation or group that is operated within a single technical infrastructure environment by a defined group of IT administrators.
 
-The Authority The organisation implementing the NHS National Programme for IT (currently NHS Connecting for Health).
-
-Current best practice Current best practice is used rather than best practice, as over time best practice guidance may change or be revised due to changes to products, changes in technology, or simply the additional field deployment experience that comes over time.
+| Term | Definition |
+| --- | --- |
+| NHS Entity | Within this document, defined as a single NHS organisation or group that is operated within a single technical infrastructure environment by a defined group of IT administrators. |
+| The Authority | The organisation implementing the NHS National Programme for IT (currently NHS Connecting for Health). |
+| Current best practice | Current best practice is used rather than best practice, as over time best practice guidance may change or be revised due to changes to products, changes in technology, or simply the additional field deployment experience that comes over time. |
 
 Table 2: Definitions
-
-#### 5.3 Nomenclature
-
 This section shows how to interpret the different styles used in this document to denote various types of information.
 
 Body Text
@@ -1093,9 +1224,21 @@ C:> CMD.exe /?
 
 #### 5.4 References
 
-R1. National Electronic Care Pathways High Level Conceptual Vision 0.4 31-Jan-2007
 
-R2. NHS CUI Toolkit Demonstrator Release Build 3.2.161.001
+| hwnd = 0 | '** window handle ** |
+| --- | --- |
+| hwndHelper = 0 |  |
+| debugx = 0 |  |
+| Set objArgs = WScript.Arguments |  |
+| Command Lines |  |
+| This document uses courier font plus a shad | ed background to denote command line entries – text to |
+| be entered is highlighted in bold. For exam | ple, the following shows the command to be executed to |
+| display the cmd help text: |  |
+| C:> CMD.exe /? |  |
+| 5.4       References |  |
+| Reference Document | Version              Date |
+| R1.              National Electronic Care P | athways High Level Conceptual Vision         0.4                  31-Jan-2007 |
+| R2.              NHS CUI Toolkit Demonstrat | or Release Build                             3.2.161.001 |
 
 Table 3: References
 
