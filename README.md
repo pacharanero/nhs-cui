@@ -1,4 +1,4 @@
-# CNHS Common User Interface (CUI) User Interface Guidelines (UIG) Resuscitation Project
+# NHS Common User Interface (CUI) User Interface Guidelines (UIG) Resuscitation Project
 
 ## Aims
 
