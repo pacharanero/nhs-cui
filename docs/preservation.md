@@ -10,6 +10,8 @@ The Zensical migration moves the corpus without changing PDF or PNG bytes or tra
 
 ## Rights are document-specific
 
+The migration branch also incorporates the table-reconstruction work subsequently merged on the archive's `main` branch. Those table repairs are preserved, not regenerated here. Nineteen contents-list entries referring to headings no longer present after that reconstruction were removed; the actual document content remains intact. The separately authored `50-key-cui-rules.md` is retained at the repository root as interpretation, not substituted for the archived source documents.
+
 Original documents, logos and extracted illustrations retain their owners' rights. Their presence in a public archive is not, by itself, permission to redistribute everything. Do not apply a blanket code or documentation licence to the historical corpus.
 
 Many documents state the Open Government Licence. Where those terms apply: contains public sector information licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). Logo and third-party exclusions still apply.

@@ -1,4 +1,4 @@
-# NHS Common User Interface source guidance
+# NHS Common User Interface (CUI) source guidance
 
 An independent, illustrated restoration of the NHS CUI design guidance, published with Zensical.
 
