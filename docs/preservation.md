@@ -8,9 +8,11 @@ There are 50 PDF downloads, 50 transcriptions and 2,420 extracted PNG files. Som
 
 The Zensical migration moves the corpus without changing PDF or PNG bytes or transcribed clinical text outside generated navigation and frontmatter titles. Source-relative image and PDF links remain valid. Thirteen broken generated contents links were corrected or removed where no corresponding heading existed; this does not remove the underlying source content. Page titles were corrected from filename abbreviations or extraction artefacts. Navigation, introductory pages and the publishing toolchain are maintained separately from the historical guidance.
 
-## Rights are document-specific
+## Updates from the maintained archive
 
 The migration branch also incorporates the table-reconstruction work subsequently merged on the archive's `main` branch. Those table repairs are preserved, not regenerated here. Nineteen contents-list entries referring to headings no longer present after that reconstruction were removed; the actual document content remains intact. The separately authored `50-key-cui-rules.md` is retained at the repository root as interpretation, not substituted for the archived source documents.
+
+## Rights are document-specific
 
 Original documents, logos and extracted illustrations retain their owners' rights. Their presence in a public archive is not, by itself, permission to redistribute everything. Do not apply a blanket code or documentation licence to the historical corpus.
 

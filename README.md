@@ -14,6 +14,8 @@ s/docs
 
 `s/docs` opens the first free port in 8000-8030. Override it with `s/docs --dev-addr localhost:8100`. Build with `s/build`; run navigation, local-file-link and script tests with `s/test`. Generated output is in `site/`.
 
+The header appearance control cycles between automatic (system preference), light and dark modes. The CUI wordmark and favicon are independent archive branding, not an NHS logo. Historical illustrations retain their original colours on a white backing in either theme.
+
 ## What is preserved
 
 - `docs/guidance/`: 50 Markdown transcriptions and 2,420 extracted PNG assets, plus a collection introduction.
