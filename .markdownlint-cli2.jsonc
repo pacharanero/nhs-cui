@@ -6,6 +6,6 @@
     "MD047": true
   },
   "globs": [
-    "markdown/**/*.md"
+    "docs/**/*.md"
   ]
 }

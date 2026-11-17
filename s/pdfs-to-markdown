@@ -54,8 +54,8 @@ def convert_pdf(pdf_path: Path, in_root: Path, out_root: Path, dpi: int) -> Path
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input", default="pdfs", help="Input PDF root directory")
-    parser.add_argument("--output", default="markdown", help="Output markdown root directory")
+    parser.add_argument("--input", default="docs/pdfs", help="Input PDF root directory")
+    parser.add_argument("--output", default="docs/guidance", help="Output markdown root directory")
     parser.add_argument("--dpi", type=int, default=150, help="Image export DPI")
     args = parser.parse_args()
 

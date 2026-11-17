@@ -198,12 +198,12 @@ def download_pdfs(
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--url", default=ARCHIVE_URL, help="Archive page URL to scrape")
-    parser.add_argument("--out", default="pdfs", help="Output directory")
+    parser.add_argument("--out", default="docs/pdfs", help="Output directory")
     parser.add_argument("--timeout", type=int, default=30, help="HTTP timeout in seconds")
     parser.add_argument("--dry-run", action="store_true", help="List PDFs without downloading")
     parser.add_argument(
         "--manifest",
-        default="pdfs/_link-manifest.json",
+        default="docs/pdfs/_link-manifest.json",
         help="Optional JSON manifest path for section/filename/title mapping (use '' to disable)",
     )
     args = parser.parse_args()

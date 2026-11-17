@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Build the archive. First install requirements.txt in .venv (see README).
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+if [[ -x .venv/bin/zensical ]]; then
+  exec .venv/bin/zensical build --clean --strict "$@"
+elif command -v zensical >/dev/null 2>&1; then
+  exec zensical build --clean --strict "$@"
+fi
+echo >&2 'Install the site tools: python3 -m venv .venv && .venv/bin/pip install -r requirements.txt'
+exit 1

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Run dependency-free documentation checks and their regression tests.
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+bash -n s/build s/docs s/test s/check-docs
+python3 -m unittest discover -s tests -v
+exec s/check-docs "$@"

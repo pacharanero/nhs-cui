@@ -1,4 +1,11 @@
-# Node / Astro
+# Python and Zensical
+.venv/
+__pycache__/
+*.pyc
+.cache/
+site/
+
+# Retired Astro output retained locally, not part of the Zensical build
 node_modules/
 .astro/
 dist/
@@ -7,3 +14,13 @@ dist/
 public/markdown/
 public/pdfs/
 src/content/docs/
+
+# Local-only private workspace
+/.private
+
+# Disposable agent and browser-automation artefacts
+/.playwright-mcp
+/.playwright
+/playwright-report
+/blob-report
+/test-results

@@ -383,8 +383,8 @@ def process_file(path: Path, root: Path, pdf_root: Path) -> Counter:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--root", default="markdown", help="Markdown root directory")
-    parser.add_argument("--pdf-root", default="pdfs", help="PDF root directory")
+    parser.add_argument("--root", default="docs/guidance", help="Markdown root directory")
+    parser.add_argument("--pdf-root", default="docs/pdfs", help="PDF root directory")
     args = parser.parse_args()
 
     root = Path(args.root)

@@ -1,56 +1,37 @@
-# CNHS Common User Interface (CUI) User Interface Guidelines (UIG) Resuscitation Project
+# NHS Common User Interface source guidance
 
-## Aims
+An independent, illustrated restoration of the NHS CUI design guidance, published with Zensical.
 
-This project intends to resuscitate the lost content of the NHS Common User Interface (CUI) User Interface Guidelines (UIG) which have been archived on the National Archives web archive. The original content was in PDF format, and the goal is to download these PDFs, transcribe their content into Markdown format, and apply cleanup passes to produce a more readable and structured output.
+## Quick start
 
-This is an essential first stage, that enables these guidelines to be more easily accessed, searched, and repurposed for modern use. The original PDFs are often difficult to read and navigate, and converting them to Markdown allows for better formatting, linking, and integration with other tools.
-
-Much of the content in these PDFs is still relevant and valuable for current NHS digital projects, and this project aims to preserve and make it more accessible for future use. There is also content which is outdated and needs to be reviewed and updated. The Markdown format will allow for easier editing and updating of the content as needed.
-
-### National Archives Web Archive
-
-The original CUI content is available on the National Archives web archive at the following URL:
-https://webarchive.nationalarchives.gov.uk/ukgwa/20160921140920/http://systems.digital.nhs.uk/data/cui
-
-### Roadmap
-
-- [x] **Phase 1** - Recreate the CUI content in a more modern and easily browsable format - markdown files with embedded images, and a clear directory structure. It will be published as a static, browsable website using a documentation-friendly SSG.
-
-- [ ] **Phase 2** - Review and update the content to ensure it is still relevant and accurate for current NHS digital projects. Remove outdated information and add new content as needed, while maintaining the original structure and intent of the guidelines.
-
-- [ ] **Phase 3** - Use patterns from popular user interface frameworks (e.g. Bootstrap, Material Design) and the knowledge in the CUI to create a reusable, open source UI framework based on the CUI guidelines
-
-## Astro Site Preview
-
-This repository now includes an Astro-based static documentation site that renders all files in `markdown/` and exposes linked source PDFs from `pdfs/`.
-
-### Run locally (Dockerized)
+Requires Python 3.11 or later. No Node.js or Docker is needed to build or preview the site.
 
 ```bash
-s/up
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+s/docs
 ```
 
-The site is then available at `http://localhost:4321`.
+`s/docs` opens the first free port in 8000-8030. Override it with `s/docs --dev-addr localhost:8100`. Build with `s/build`; run navigation, local-file-link and script tests with `s/test`. Generated output is in `site/`.
 
-If port `4321` is already in use, set an alternative host port:
+## What is preserved
 
-```bash
-HOST_PORT=44321 s/up
-```
+- `docs/guidance/`: 50 Markdown transcriptions and 2,420 extracted PNG assets, plus a collection introduction.
+- `docs/pdfs/`: 50 original PDF downloads and their archive link manifest.
+- `docs/preservation.md`: provenance, duplicate downloads, historical limitations and document-specific rights.
+- `s/`: local preview/build/check scripts and the original recovery tools.
+- `spec/`: migration and upstream-integration notes; the old Astro experiment is retained as historical context, not active instructions.
 
-Then open `http://localhost:44321`.
+The transcriptions are not a clinical-policy update or a certification. Consult the original PDF and current authoritative guidance when interpreting a rule. Original wording and illustrations retain their owners' rights; see [preservation and terms](docs/preservation.md).
 
-### Stop local environment
+## Relationship to Clinical CUI
 
-```bash
-s/down
-```
+[Gabe Rijpma's Common User Interface](https://github.com/giussepe198/common-user-interface) provides React and TypeScript controls implementing and extending the guidance. This project preserves readable, illustrated source material; it will not develop a competing library. Contributions should improve source accessibility, implementation traceability and the existing library.
 
-### Build static output (host)
+The proposed upstream home is a root-level Zensical `docs/` site, separate from Gabe's existing `nhs-cui-react/docs/` library documentation. See [the integration proposal](spec/upstream-integration.md).
 
-```bash
-npm run build
-```
+## Publishing
 
-`predev` and `prebuild` automatically run `s/sync-site-assets.mjs` to mirror `markdown/` and `pdfs/` into `public/` before Astro starts/builds.
+GitHub Actions builds and tests pull requests and deploys `site/` on pushes to `main`. Repository Settings > Pages > Source must be **GitHub Actions**. The configured URL is <https://pacharanero.github.io/nhs-cui/>; publishing settings are not changed by a local build.
+
+For recovery-tool usage see [s/README.md](s/README.md). Historical source: [National Archives CUI UIG snapshot](https://webarchive.nationalarchives.gov.uk/ukgwa/20160921150545/http://systems.digital.nhs.uk/data/cui/uig).
