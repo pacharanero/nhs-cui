@@ -4,9 +4,9 @@ name: Documentation
 on:
   push:
     branches: [main]
-    paths: ["docs/**", "mkdocs.yml", "requirements.txt", "s/**", "tests/**", ".github/workflows/deploy-pages.yml"]
+    paths: ["docs/**", "mkdocs.yml", "requirements.txt", "s/**", "tests/**", ".github/dependabot.yml", ".github/workflows/deploy-pages.yml"]
   pull_request:
-    paths: ["docs/**", "mkdocs.yml", "requirements.txt", "s/**", "tests/**", ".github/workflows/deploy-pages.yml"]
+    paths: ["docs/**", "mkdocs.yml", "requirements.txt", "s/**", "tests/**", ".github/dependabot.yml", ".github/workflows/deploy-pages.yml"]
   workflow_dispatch:
 permissions:
   contents: read
