@@ -2,6 +2,12 @@
 
 An independent, illustrated restoration of the NHS CUI design guidance, published with Zensical.
 
+## Ongoing development
+
+**The main focus of ongoing work is [Gabe Rijpma's Common User Interface repository](https://github.com/giussepe198/common-user-interface).** It now includes the contributed Zensical-rendered source guidance alongside its React and TypeScript component library. Please direct new implementation work and improvements to the shared guidance there.
+
+This repository remains available with its restored documents, original PDFs, recovery tools and history. Everything here, including the published website, is being retained for now; this is not a competing component-library project.
+
 ## Quick start
 
 Requires Python 3.11 or later. No Node.js or Docker is needed to build or preview the site.
@@ -28,9 +34,9 @@ The transcriptions are not a clinical-policy update or a certification. Consult 
 
 ## Relationship to Clinical CUI
 
-[Gabe Rijpma's Common User Interface](https://github.com/giussepe198/common-user-interface) provides React and TypeScript controls implementing and extending the guidance. This project preserves readable, illustrated source material; it will not develop a competing library. Contributions should improve source accessibility, implementation traceability and the existing library.
+[Gabe Rijpma's Common User Interface](https://github.com/giussepe198/common-user-interface) provides React and TypeScript controls implementing and extending the guidance. The illustrated source-guidance contribution was merged in [PR #3](https://github.com/giussepe198/common-user-interface/pull/3), making that repository the shared home for ongoing work.
 
-The proposed upstream home is a root-level Zensical `docs/` site, separate from Gabe's existing `nhs-cui-react/docs/` library documentation. See [the integration proposal](spec/upstream-integration.md).
+The contributed Zensical site lives in its root-level `docs/`, separate from the existing `nhs-cui-react/docs/` library documentation. The [integration proposal](spec/upstream-integration.md) records the original plan; document-specific rights exclusions and PDF duplication still need to be respected in future consolidation.
 
 ## Publishing
 
